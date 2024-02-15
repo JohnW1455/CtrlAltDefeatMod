@@ -1,0 +1,17 @@
+{
+    "Format": "2.0",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "FromFile": "assets/Forest2.tmx"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "AddWarps": [
+                "101 72 Mountain 76 9"
+            ]
+        }
+    ]
+}

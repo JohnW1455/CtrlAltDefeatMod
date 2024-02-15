@@ -1,0 +1,11 @@
+{
+    "Name": "MapReplace",
+    "Author": "John Wager",
+    "Version": "1.0.0",
+    "Description": "One or two sentences about the mod.",
+    "UniqueID": "JohnWager.MapReplace",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
