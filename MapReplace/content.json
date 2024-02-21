@@ -12,6 +12,40 @@
             "AddWarps": [
                 "101 72 Mountain 76 9"
             ]
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Kacy",
+            "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kacy",
+            "FromFile": "assets/NPC/KacyPortraits.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Kacy",
+            "FromFile": "assets/NPC/KacyDialogue.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/Kacy",
+            "FromFile": "assets/NPC/KacySchedule.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Diana": "adult/polite/neutral/positive/female/not-datable//Town/summer 14//Saloon 42 17/Kacy"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Kacy": "Oh my, I love this! Thank you./307 168/This is nice, thanks./128 -15/Oh. This, isn't for me.../164/This is disgusting./72/Thank you. This is nice./-4/ "
+            }
         }
     ]
 }
