@@ -1,5 +1,13 @@
 {
     "Format": "1.30.4",
+
+    "CustomLocations": [
+        {
+            "Name": "Custom_Cult_Cave",
+            "FromMapFile": "assets/CultCave.tmx"
+        }
+    ],
+
     "Changes": [
         {
             "Action": "EditMap",
@@ -10,7 +18,7 @@
             "Action": "EditMap",
             "Target": "Maps/Forest",
             "AddWarps": [
-                "101 72 Mountain 76 9"
+                "101 72 Custom_Cult_Cave 0 0"
             ]
         },
         {
