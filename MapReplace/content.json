@@ -42,17 +42,22 @@
             "FromFile": "assets/NPC/KacySchedule.json"
         },
         {
+            "Action": "Load",
+            "Target": "Strings/schedules/Kacy",
+            "FromFile": "assets/NPC/KacyScheduleStrings.json"
+        },
+        {
             "Action": "EditData",
             "Target": "Data/NPCDispositions",
             "Entries": {
-                "Diana": "adult/polite/neutral/positive/female/not-datable//Town/summer 14//Saloon 42 17/Kacy"
+                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Forest 101 74/Kacy"
             }
         },
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Kacy": "Oh my, I love this! Thank you./307 168/This is nice, thanks./128 -15/Oh. This, isn't for me.../164/This is disgusting./72/Thank you. This is nice./-4/ "
+                "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
             }
         }
     ]
