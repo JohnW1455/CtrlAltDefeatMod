@@ -59,6 +59,45 @@
             "Entries": {
                 "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
             }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Rodger",
+            "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Rodger",
+            "FromFile": "assets/NPC/RodgerPortraits.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Rodger",
+            "FromFile": "assets/NPC/RodgerDialogue.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/Rodger",
+            "FromFile": "assets/NPC/RodgerSchedule.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Strings/schedules/Rodger",
+            "FromFile": "assets/NPC/RodgerScheduleStrings.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Forest 102 75/Rodger"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is toughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
+            }
         }
     ]
 }
