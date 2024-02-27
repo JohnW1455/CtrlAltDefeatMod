@@ -1,0 +1,7 @@
+{
+  "rain": "900 Forest 101 74 2/1030 Forest 59 70 3/1300 Town 27 61 2/1630 Forest 87 81 0/1930 Forest 101 74 2",
+  "fall": "900 Forest 101 74 2/1030 Forest 59 70 3/1300 Town 27 61 2/1630 Forest 87 81 0/1930 Forest 101 74 2",
+  "winter": "900 Forest 101 74 2/1030 Forest 59 70 3/1300 Town 27 61 2/1630 Forest 87 81 0/1930 Forest 101 74 2",
+  "summer": "900 Forest 101 74 2/1030 Forest 59 70 3/1300 Town 27 61 2/1630 Forest 87 81 0/1930 Forest 101 74 2",
+  "spring": "900 Forest 101 74 2/1030 Forest 59 70 3 \"Strings\\schedules\\Kacy:spring.001\"/1300 Town 27 61 2/1630 Forest 87 81 0/1930 Forest 101 74 2"
+}

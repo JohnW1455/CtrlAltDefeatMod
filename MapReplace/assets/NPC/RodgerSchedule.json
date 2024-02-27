@@ -1,0 +1,7 @@
+{
+  "rain": "900 Forest 102 75 2/1030 Forest 60 71 3/1300 Town 28 62 2/1630 Forest 88 82 0/1930 Forest 102 75 2",
+  "fall": "900 Forest 102 75 2/1030 Forest 60 71 3/1300 Town 28 62 2/1630 Forest 88 82 0/1930 Forest 102 75 2",
+  "winter": "900 Forest 102 75 2/1030 Forest 60 71 3/1300 Town 28 62 2/1630 Forest 88 82 0/1930 Forest 102 75 2",
+  "summer": "900 Forest 102 75 2/1030 Forest 60 71 3/1300 Town 28 62 2/1630 Forest 88 82 0/1930 Forest 102 75 2",
+  "spring": "900 Forest 102 75 2/1030 Forest 60 71 3 \"Strings\\schedules\\Rodger:spring.001\"/1300 Town 28 62 2/1630 Forest 88 82 0/1930 Forest 102 75 2"
+}
