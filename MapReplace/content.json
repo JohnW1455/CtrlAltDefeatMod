@@ -50,7 +50,7 @@
             "Action": "EditData",
             "Target": "Data/NPCDispositions",
             "Entries": {
-                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Forest 101 74/Kacy"
+                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Custom_Cult_Cave 23 21 2/Kacy"
             }
         },
         {
@@ -89,7 +89,7 @@
             "Action": "EditData",
             "Target": "Data/NPCDispositions",
             "Entries": {
-                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Forest 102 75/Rodger"
+                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Custom_Cult_Cave 20 23 2/Rodger"
             }
         },
         {
