@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MapReplace"
+    "\\MapReplace",
+    "\\MapReplace\\assets",
+    "\\MapReplace\\assets\\Events"
   ],
-  "SelectedNode": "\\MapReplace\\content.json",
+  "SelectedNode": "\\MapReplace\\assets\\Events\\Custom_Cult_Cave.json",
   "PreviewInSolutionExplorer": false
 }
