@@ -48,9 +48,52 @@
         },
         {
             "Action": "EditData",
-            "Target": "Data/NPCDispositions",
+            "Target": "Data/Characters",
             "Entries": {
-                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Custom_Cult_Cave 23 21 2/Kacy"
+                "Kacy": {
+                    "DisplayName": "Kacy",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 15,
+                    "HomeRegion": "Forest",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": null,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": null,
+                    "CanVisitIsland": null,
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "DumpsterDiveFriendshipEffect": 10,
+                    "DumpsterDiveEmote": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": [],
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": true,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                      {
+                        "Id": "Default",
+                        "Condition": null,
+                        "Location": "Custom_Cult_Cave",
+                        "Tile": {
+                          "X": 20,
+                          "Y": 23
+                        },
+                        "Direction": "down"
+                      }
+                    ]
+                  }
             }
         },
         {
@@ -87,9 +130,52 @@
         },
         {
             "Action": "EditData",
-            "Target": "Data/NPCDispositions",
+            "Target": "Data/Characters",
             "Entries": {
-                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Custom_Cult_Cave 20 23 2/Rodger"
+                "Rodger": {
+                    "DisplayName": "Rodger",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 27,
+                    "HomeRegion": "Forest",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": null,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": null,
+                    "CanVisitIsland": null,
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": [],
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": true,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                      {
+                        "Id": "Default",
+                        "Condition": null,
+                        "Location": "Custom_Cult_Cave",
+                        "Tile": {
+                          "X": 23,
+                          "Y": 23
+                        },
+                        "Direction": "down"
+                      }
+                    ]
+                  }
             }
         },
         {
