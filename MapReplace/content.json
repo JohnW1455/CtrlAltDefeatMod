@@ -18,7 +18,7 @@
             "Action": "EditMap",
             "Target": "Maps/Forest",
             "AddWarps": [
-                "101 72 Custom_Cult_Cave 0 0"
+                "101 72 Custom_Cult_Cave 23 15"
             ]
         },
         {
@@ -50,7 +50,7 @@
             "Action": "EditData",
             "Target": "Data/NPCDispositions",
             "Entries": {
-                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Forest 101 74/Kacy"
+                "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Custom_Cult_Cave 23 21 2/Kacy"
             }
         },
         {
@@ -89,14 +89,14 @@
             "Action": "EditData",
             "Target": "Data/NPCDispositions",
             "Entries": {
-                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Forest 102 75/Rodger"
+                "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Custom_Cult_Cave 20 23 2/Rodger"
             }
         },
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is toughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
+                "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is thoughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
             }
         }
     ]
