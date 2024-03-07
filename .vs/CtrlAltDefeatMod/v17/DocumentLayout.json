@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\assets\\Events\\Custom_Cult_Cave.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MapReplace\\assets\\Events\\Custom_Cult_Cave.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\content.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MapReplace\\content.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -14,23 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Custom_Cult_Cave.json",
+              "DocumentMoniker": "C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\assets\\Events\\Custom_Cult_Cave.json",
+              "RelativeDocumentMoniker": "MapReplace\\assets\\Events\\Custom_Cult_Cave.json",
+              "ToolTip": "C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\assets\\Events\\Custom_Cult_Cave.json",
+              "RelativeToolTip": "MapReplace\\assets\\Events\\Custom_Cult_Cave.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-07T07:31:57.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "content.json",
               "DocumentMoniker": "C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\content.json",
               "RelativeDocumentMoniker": "MapReplace\\content.json",
               "ToolTip": "C:\\Users\\luger\\source\\repos\\CtrlAltDefeatMod\\MapReplace\\content.json",
               "RelativeToolTip": "MapReplace\\content.json",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAALAAAAALAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAAL8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-07T02:37:06.464Z",
+              "WhenOpened": "2024-03-07T05:34:55.354Z",
               "EditorCaption": ""
             }
           ]
