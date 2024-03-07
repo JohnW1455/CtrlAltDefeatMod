@@ -1,189 +1,196 @@
 {
-    "Format": "1.30.4",
+  "Format": "1.30.4",
 
-    "CustomLocations": [
-        {
-            "Name": "Custom_Cult_Cave",
-            "FromMapFile": "assets/CultCave.tmx"
-        }
-    ],
+  "CustomLocations": [
+    {
+      "Name": "Custom_Cult_Cave",
+      "FromMapFile": "assets/CultCave.tmx"
+    }
+  ],
 
-    "Changes": [
-        {
-            "Action": "EditMap",
-            "Target": "Maps/Forest",
-            "FromFile": "assets/Forest2.tmx"
-        },
-        {
-            "Action": "EditMap",
-            "Target": "Maps/Forest",
-            "AddWarps": [
-                "101 72 Custom_Cult_Cave 23 15"
-            ]
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/Kacy",
-            "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Portraits/Kacy",
-            "FromFile": "assets/NPC/KacyPortraits.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/Dialogue/Kacy",
-            "FromFile": "assets/NPC/KacyDialogue.json"
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/schedules/Kacy",
-            "FromFile": "assets/NPC/KacySchedule.json"
-        },
-        {
-            "Action": "Load",
-            "Target": "Strings/schedules/Kacy",
-            "FromFile": "assets/NPC/KacyScheduleStrings.json"
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Characters",
-            "Entries": {
-                "Kacy": {
-                    "DisplayName": "Kacy",
-                    "BirthSeason": "Summer",
-                    "BirthDay": 15,
-                    "HomeRegion": "Forest",
-                    "Language": "Default",
-                    "Gender": "Female",
-                    "Age": "Adult",
-                    "Manner": "Polite",
-                    "SocialAnxiety": "Neutral",
-                    "Optimism": "Positive",
-                    "IsDarkSkinned": false,
-                    "CanBeRomanced": false,
-                    "Calendar": "HiddenUntilMet",
-                    "SocialTab": "UnknownUntilMet",
-                    "CanSocialize": null,
-                    "CanReceiveGifts": true,
-                    "CanGreetNearbyCharacters": true,
-                    "CanCommentOnPurchasedShopItems": null,
-                    "CanVisitIsland": null,
-                    "IntroductionsQuest": false,
-                    "ItemDeliveryQuests": false,
-                    "PerfectionScore": false,
-                    "EndSlideShow": "Hidden",
-                    "DumpsterDiveFriendshipEffect": 10,
-                    "DumpsterDiveEmote": null,
-                    "FlowerDanceCanDance": false,
-                    "WinterStarGifts": [],
-                    "WinterStarParticipant": null,
-                    "UnlockConditions": true,
-                    "SpawnIfMissing": true,
-                    "Home": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Location": "Custom_Cult_Cave",
-                        "Tile": {
-                          "X": 20,
-                          "Y": 23
-                        },
-                        "Direction": "down"
-                      }
-                    ]
-                  }
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Forest2.tmx"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "AddWarps": [
+        "101 72 Custom_Cult_Cave 23 15"
+      ]
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Kacy",
+      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Kacy",
+      "FromFile": "assets/NPC/KacyPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Kacy",
+      "FromFile": "assets/NPC/KacyDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Kacy",
+      "FromFile": "assets/NPC/KacySchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/schedules/Kacy",
+      "FromFile": "assets/NPC/KacyScheduleStrings.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Kacy": {
+          "DisplayName": "Kacy",
+          "BirthSeason": "Summer",
+          "BirthDay": 15,
+          "HomeRegion": "Forest",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": null,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": null,
+          "CanVisitIsland": null,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": 10,
+          "DumpsterDiveEmote": null,
+          "FlowerDanceCanDance": false,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Cult_Cave",
+              "Tile": {
+                "X": 20,
+                "Y": 23
+              },
+              "Direction": "down"
             }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "Entries": {
-                "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
-            }
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/Rodger",
-            "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Portraits/Rodger",
-            "FromFile": "assets/NPC/RodgerPortraits.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/Dialogue/Rodger",
-            "FromFile": "assets/NPC/RodgerDialogue.json"
-        },
-        {
-            "Action": "Load",
-            "Target": "Characters/schedules/Rodger",
-            "FromFile": "assets/NPC/RodgerSchedule.json"
-        },
-        {
-            "Action": "Load",
-            "Target": "Strings/schedules/Rodger",
-            "FromFile": "assets/NPC/RodgerScheduleStrings.json"
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Characters",
-            "Entries": {
-                "Rodger": {
-                    "DisplayName": "Rodger",
-                    "BirthSeason": "Fall",
-                    "BirthDay": 27,
-                    "HomeRegion": "Forest",
-                    "Language": "Default",
-                    "Gender": "Male",
-                    "Age": "Adult",
-                    "Manner": "Polite",
-                    "SocialAnxiety": "Neutral",
-                    "Optimism": "Positive",
-                    "IsDarkSkinned": false,
-                    "CanBeRomanced": false,
-                    "Calendar": "HiddenUntilMet",
-                    "SocialTab": "UnknownUntilMet",
-                    "CanSocialize": null,
-                    "CanReceiveGifts": true,
-                    "CanGreetNearbyCharacters": true,
-                    "CanCommentOnPurchasedShopItems": null,
-                    "CanVisitIsland": null,
-                    "IntroductionsQuest": false,
-                    "ItemDeliveryQuests": false,
-                    "PerfectionScore": false,
-                    "EndSlideShow": "Hidden",
-                    "DumpsterDiveFriendshipEffect": 0,
-                    "DumpsterDiveEmote": null,
-                    "FlowerDanceCanDance": false,
-                    "WinterStarGifts": [],
-                    "WinterStarParticipant": null,
-                    "UnlockConditions": true,
-                    "SpawnIfMissing": true,
-                    "Home": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Location": "Custom_Cult_Cave",
-                        "Tile": {
-                          "X": 23,
-                          "Y": 23
-                        },
-                        "Direction": "down"
-                      }
-                    ]
-                  }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "Entries": {
-                "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is thoughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
-            }
+          ]
         }
-    ]
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Rodger",
+      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Rodger",
+      "FromFile": "assets/NPC/RodgerPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Rodger",
+      "FromFile": "assets/NPC/RodgerDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Rodger",
+      "FromFile": "assets/NPC/RodgerSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/schedules/Rodger",
+      "FromFile": "assets/NPC/RodgerScheduleStrings.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Rodger": {
+          "DisplayName": "Rodger",
+          "BirthSeason": "Fall",
+          "BirthDay": 27,
+          "HomeRegion": "Forest",
+          "Language": "Default",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": null,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": null,
+          "CanVisitIsland": null,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": 0,
+          "DumpsterDiveEmote": null,
+          "FlowerDanceCanDance": false,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Cult_Cave",
+              "Tile": {
+                "X": 23,
+                "Y": 23
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is thoughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "CAD.TCC_Forest_surpriseEvent/": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+      }
+    }
+  ]
 }
