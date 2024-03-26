@@ -24,7 +24,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Kacy",
-      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/KacySpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -106,7 +106,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -196,6 +196,41 @@
       "Action": "Load",
       "Target": "Data/Events/Custom_Cult_Cave",
       "FromFile": "assets/Events/Custom_Cult_Cave.json"
+    },
+    { // Quest Test
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37361": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+      }
+    },
+    { // Quest Test
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37362": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+      }
+    },
+    { // Quest Test
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37363": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+      }
+    },
+    { // Quest Test
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37364": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+      }
+    },
+    { // Quest Test
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37365": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+      }
     }
   ]
 }

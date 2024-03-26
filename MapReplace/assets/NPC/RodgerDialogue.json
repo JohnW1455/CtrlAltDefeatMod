@@ -1,3 +1,10 @@
 {
-  "Introduction": "Oh, hello. You should go check out some other place#$e#Nothing to see here. Trust me.$3"
+  "Introduction": "Oh, hello. You should go check out some other place#$e#Nothing to see here. Trust me.$3",
+  "Mon": "How is everything coming along?",
+  "Tue": "I cleaned my glasses earlier.$h",
+  "Wed": "It's wonderfully plain today.",
+  "Thu": "I trust you're doing well, @.",
+  "Fri": "I absolutely adore a nice cup of tea in the morning, don't you?$h",
+  "Sat": "Hello @. Anything I can assist you with?",
+  "Sun": "I hope you've had a nice weekend."
 }
