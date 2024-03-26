@@ -1,5 +1,5 @@
 {
-  "Format": "1.30.4",
+  "Format": "2.0.0",
 
   "CustomLocations": [
     {
@@ -188,7 +188,7 @@
     {
       "Action":"EditData",
       "Target":"Data/weapons",
-      "Entries":{
+      "Entries": {
         "65": {
           "Name": "Ritual Dagger",
           "DisplayName": "Ritual Dagger",
@@ -212,6 +212,11 @@
           "CustomFields": null
         }
       }
+    },
+    {
+      "Action":"Load",
+      "Target":"Tilesheets/weapons",
+      "FromFile":"assets/weapons.png"
     },
     { // Event #2 - Player sees Kacy walk to base and talk to Roger - Adds in a line of code to the forest events file
       "Action": "EditData",
