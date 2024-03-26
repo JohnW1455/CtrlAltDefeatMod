@@ -22,10 +22,10 @@
   <image source="coopTiles.png" width="64" height="336"/>
  </tileset>
  <tileset firstgid="6144" name="townInterior(NASH_EDITION)" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="C:/Users/Nashf/OneDrive/Desktop/Stardew test mod/townInterior(NASH_EDITION).png" width="512" height="1088"/>
+  <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
  <tileset firstgid="8320" name="townInterior(NASH_EDITION)" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="C:/Users/Nashf/OneDrive/Desktop/Stardew test mod/townInterior(NASH_EDITION).png" width="512" height="1088"/>
+  <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
  <layer id="1" name="Back" width="75" height="75">
   <data encoding="csv">

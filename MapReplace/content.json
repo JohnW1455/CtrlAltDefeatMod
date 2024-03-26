@@ -185,6 +185,34 @@
         "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is thoughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
       }
     },
+    {
+      "Action":"EditData",
+      "Target":"Data/weapons",
+      "Entries":{
+        "65": {
+          "Name": "Ritual Dagger",
+          "DisplayName": "Ritual Dagger",
+          "Description": "This dagger seems to exude a strange energy",
+          "MinDamage": 4,
+          "MaxDamage": 10,
+          "Knockback": 1.0,
+          "Speed": 1,
+          "Precision": 10,
+          "Defense": 0,
+          "Type": 1,
+          "MineBaseLevel": -1,
+          "MineMinLevel": -1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 4.0,
+          "CanBeLostOnDeath": true,
+          "Texture": "TileSheets/weapons",
+          "SpriteIndex": 65,
+          "Projectiles": null,
+          "CustomFields": null
+        }
+      }
+    },
     { // Event #2 - Player sees Kacy walk to base and talk to Roger - Adds in a line of code to the forest events file
       "Action": "EditData",
       "Target": "Data/Events/Forest",
