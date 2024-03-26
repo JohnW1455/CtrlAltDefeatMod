@@ -24,7 +24,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Kacy",
-      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/KacySpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -106,7 +106,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
     },
     {
       "Action": "Load",
