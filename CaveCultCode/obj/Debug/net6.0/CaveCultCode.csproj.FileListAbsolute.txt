@@ -1,0 +1,9 @@
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.AssemblyInfoInputs.cache
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.AssemblyInfo.cs
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.csproj.CoreCompileInputs.cache
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.sourcelink.json
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\bin\Debug\net6.0\CaveCultCode.deps.json
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\bin\Debug\net6.0\CaveCultCode.dll
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.csproj.AssemblyReference.cache
+C:\Users\shawg\OneDrive\Desktop\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.dll

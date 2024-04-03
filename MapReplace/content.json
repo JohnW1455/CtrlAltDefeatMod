@@ -1,14 +1,97 @@
 {
-  "Format": "1.30.4",
-
+  "Format": "2.0.0",
   "CustomLocations": [
     {
       "Name": "Custom_Cult_Cave",
       "FromMapFile": "assets/CultCave.tmx"
     }
   ],
-
   "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/LocationContexts",
+      "Entries": {
+        "Farm_Standard": {}
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Farm",
+      "MapProperties": {
+        "LocationContext": "Farm_Standard"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/LocationContexts",
+      "Entries": {
+        "BusStop": {}
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/BusStop",
+      "MapProperties": {
+        "LocationContext": "BusStop"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/LocationContexts",
+      "Entries": {
+        "Town": {}
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapProperties": {
+        "LocationContext": "Town"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/LocationContexts",
+      "Entries": {
+        "Farm_Standard": {
+          "WeatherConditions": [
+            {
+              "Id": "Snow",
+              "Condition": "SEASON Spring, YEAR 1",
+              "Weather": "Snow"
+            }
+          ]
+        },
+        "BusStop": {
+          "CopyWeatherFromLocation": "Farm_Standard"
+        },
+        "Town": {
+          "CopyWeatherFromLocation": "Farm_Standard"
+        }
+      },
+      "When": {
+        "HasSeenEvent |Contains=CAD.TCC_Town_event1a": false,
+        "Query: {{DaysPlayed}} >= 1": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "CAD.TCC_Town_event1a/Season Spring/GameStateQuery WEATHER Town Snow": "none/29 64/ Lewis 29 61 2 George 27 62 1 Marnie 28 64 0 Gus 30 64 0 Pam 31 62 3 farmer 27 55 2 / skippable/ pause 750/
+                speak Lewis \"Thank you everyone for coming out on this abnormally snowy day.#$b# It seems like tomorrow will be snowy as well.\"/
+                emote Gus 9/ speak Gus \"Why is it snowing only on the town and the farm?\"$2/
+                emote George 12/ speak George \"I bet it's those two hooligans that just moved into town! Where are they even staying?\"$3/ 
+                speak Marnie \"I've seen them in the forest a few times, maybe they set up camp there? I'm sure it must be rough with this snow.\"$s/
+                speak Lewis \"Well I'm sure it's not them, how could they make it snow?$5#$b# Regardless, make sure you all stay warm today!\"$h/
+                emote Gus 16/ speak Gus \"I know what'll keep us warm - round on the house at Saloon tonight!\"$h/
+                speak Pam \"Now that's what I'm talking about!\"$h/ move George 0 12 2 Marnie 0 12 2 Gus 0 12 2 Pam 0 12 2 farmer 0 6 1 / move Lewis 0 0 3/
+                emote Lewis 16/ speak Lewis \"Oh @! Just the person I wanted to see.#$b# As much as I hate to admit it, George may have been on to something.$s#$b#
+                As the mayor, I hear about everything that goes on in this town.#$b# And I've heard a lot of rumors about the two new folks. People are saying they've got bad mojo.
+                #3#$b# Just keep an eye on them for me, if you can. I'm sure they're good people.\"/ end position 27 61"
+      }
+    },
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
@@ -24,7 +107,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Kacy",
-      "FromFile": "assets/NPC/KacySpriteSheet.png"
+      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
     },
     {
       "Action": "Load",
@@ -48,52 +131,55 @@
     },
     {
       "Action": "EditData",
-      "Target": "Data/Characters",
+      "Target": "Data/NPCDispositions",
       "Entries": {
-        "Kacy": {
-          "DisplayName": "Kacy",
-          "BirthSeason": "Summer",
-          "BirthDay": 15,
-          "HomeRegion": "Forest",
-          "Language": "Default",
-          "Gender": "Female",
-          "Age": "Adult",
-          "Manner": "Polite",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "IsDarkSkinned": false,
-          "CanBeRomanced": false,
-          "Calendar": "HiddenUntilMet",
-          "SocialTab": "UnknownUntilMet",
-          "CanSocialize": null,
-          "CanReceiveGifts": true,
-          "CanGreetNearbyCharacters": true,
-          "CanCommentOnPurchasedShopItems": null,
-          "CanVisitIsland": null,
-          "IntroductionsQuest": false,
-          "ItemDeliveryQuests": false,
-          "PerfectionScore": false,
-          "EndSlideShow": "Hidden",
-          "DumpsterDiveFriendshipEffect": 10,
-          "DumpsterDiveEmote": null,
-          "FlowerDanceCanDance": false,
-          "WinterStarGifts": [],
-          "WinterStarParticipant": null,
-          "UnlockConditions": true,
-          "SpawnIfMissing": true,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "Custom_Cult_Cave",
-              "Tile": {
-                "X": 20,
-                "Y": 23
-              },
-              "Direction": "down"
-            }
-          ]
-        }
+        "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Forest 101 74/Kacy"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Rodger",
+      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Rodger",
+      "FromFile": "assets/NPC/RodgerPortraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Rodger",
+      "FromFile": "assets/NPC/RodgerDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Rodger",
+      "FromFile": "assets/NPC/RodgerSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/schedules/Rodger",
+      "FromFile": "assets/NPC/RodgerScheduleStrings.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Rodger": "adult/polite/neutral/positive/male/not-datable//Town/fall 27//Forest 102 75/Rodger"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is toughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
       }
     },
     {
@@ -184,6 +270,39 @@
       "Entries": {
         "Rodger": "Thank you so much. I love this!/852 199 348 64 614/This is thoughtful, thank you./288 815 769 768 829 341/Oh Uhhh thanks.../340 245 233 221/I could go without this in my life./-80 220/How kind. Thank you./766 286 287 288/"
       }
+    },
+    {
+      "Action":"EditData",
+      "Target":"Data/weapons",
+      "Entries": {
+        "65": {
+          "Name": "Ritual Dagger",
+          "DisplayName": "Ritual Dagger",
+          "Description": "This dagger seems to exude a strange energy",
+          "MinDamage": 4,
+          "MaxDamage": 10,
+          "Knockback": 1.0,
+          "Speed": 1,
+          "Precision": 10,
+          "Defense": 0,
+          "Type": 1,
+          "MineBaseLevel": -1,
+          "MineMinLevel": -1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.04,
+          "CritMultiplier": 4.0,
+          "CanBeLostOnDeath": true,
+          "Texture": "TileSheets/weapons",
+          "SpriteIndex": 65,
+          "Projectiles": null,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action":"Load",
+      "Target":"Tilesheets/weapons",
+      "FromFile":"assets/weapons.png"
     },
     { // Event #2 - Player sees Kacy walk to base and talk to Roger - Adds in a line of code to the forest events file
       "Action": "EditData",
