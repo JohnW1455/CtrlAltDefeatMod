@@ -107,7 +107,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Kacy",
-      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/KacySpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -146,7 +146,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -188,31 +188,6 @@
       "Entries": {
         "Kacy": "Oh my, I love this! Thank you./873 215 233 226 348/This is nice, thanks./167 168 283 396/Oh. This, isn't for me.../418 198 728 212 213 219/This is disgusting./-80 209 -4 346 303 459 242/Thank you. This is nice./766 767 227/"
       }
-    },
-    {
-      "Action": "Load",
-      "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
-    },
-    {
-      "Action": "Load",
-      "Target": "Portraits/Rodger",
-      "FromFile": "assets/NPC/RodgerPortraits.png"
-    },
-    {
-      "Action": "Load",
-      "Target": "Characters/Dialogue/Rodger",
-      "FromFile": "assets/NPC/RodgerDialogue.json"
-    },
-    {
-      "Action": "Load",
-      "Target": "Characters/schedules/Rodger",
-      "FromFile": "assets/NPC/RodgerSchedule.json"
-    },
-    {
-      "Action": "Load",
-      "Target": "Strings/schedules/Rodger",
-      "FromFile": "assets/NPC/RodgerScheduleStrings.json"
     },
     {
       "Action": "EditData",
