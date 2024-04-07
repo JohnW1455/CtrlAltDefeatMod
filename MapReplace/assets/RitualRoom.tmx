@@ -7,7 +7,7 @@
   <image source="../../../../SteamLibrary/steamapps/common/Stardew Valley/Content (unpacked)/Maps/paths.png" width="64" height="144"/>
  </tileset>
  <tileset firstgid="325" name="townInterior(NASH_EDITION)" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="C:/Users/Nashf/OneDrive/Desktop/Stardew test mod/townInterior(NASH_EDITION).png" width="512" height="1088"/>
+  <image source="townInterior(NASH_EDITION).png" width="512" height="1088"/>
  </tileset>
  <layer id="1" name="Back" width="50" height="60">
   <data encoding="csv">
