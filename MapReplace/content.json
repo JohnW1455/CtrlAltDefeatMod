@@ -266,51 +266,44 @@
       "Target":"Tilesheets/weapons",
       "FromFile":"assets/weapons.png"
     },
-    { // Event #2 - Player sees Kacy walk to base and talk to Roger - Adds in a line of code to the forest events file
+    {
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
         "CAD.TCC_Forest_surpriseEvent/": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
       }
     },
-    { // Event #3 - Player enters the cave and is confronted by Kacy & Roger - Loads custom_cult_cave json into the events folder which holds the event stuff
+    {
       "Action": "Load",
       "Target": "Data/Events/Custom_Cult_Cave",
       "FromFile": "assets/Events/Custom_Cult_Cave.json"
     },
-    { // Quest Test
+    {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37361": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish."
       }
     },
-    { // Quest Test
+    {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37362": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+        "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!"
       }
     },
-    { // Quest Test
+    {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37363": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+        "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?"
       }
     },
-    { // Quest Test
+    {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37364": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
-      }
-    },
-    { // Quest Test
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37365": "ItemDelivery/Mama Yaasss/Mama wants you to yaas her to death./Bring Kacy 5 potatoes./Kacy 192 5/-1/5/-1/true/Now I can die!"
+        "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now..."
       }
     }
   ]
