@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CtrlAltDefeatMod/FileContentIndex
+/.vs/CtrlAltDefeatMod/v17/.wsuo
+/.vs/CtrlAltDefeatMod/v17/DocumentLayout.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/CaveCultCode/obj/Debug/net6.0/CaveCultCode.AssemblyInfo.cs
+/CaveCultCode/obj/Debug/net6.0/CaveCultCode.AssemblyInfoInputs.cache
+/CaveCultCode/obj/Debug/net6.0/CaveCultCode.csproj.AssemblyReference.cache
+/CaveCultCode/obj/Debug/net6.0/CaveCultCode.GeneratedMSBuildEditorConfig.editorconfig
+/CaveCultCode/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+/CaveCultCode/obj/Release/net6.0/CaveCultCode.AssemblyInfo.cs
+/CaveCultCode/obj/Release/net6.0/CaveCultCode.AssemblyInfoInputs.cache
+/CaveCultCode/obj/Release/net6.0/CaveCultCode.csproj.AssemblyReference.cache
+/CaveCultCode/obj/Release/net6.0/CaveCultCode.GeneratedMSBuildEditorConfig.editorconfig
+/CaveCultCode/obj/Release/net6.0/CaveCultCode.GlobalUsings.g.cs

@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "CAD.TCC_Town_event1a/Season Spring/GameStateQuery WEATHER Town Snow": "none/29 64/ Lewis 29 61 2 George 27 62 1 Marnie 28 64 0 Gus 30 64 0 Pam 31 62 3 farmer 27 55 2 / skippable/ pause 750/
+                      speak Lewis \"Thank you everyone for coming out on this abnormally snowy day.#$b# It seems like tomorrow will be snowy as well.\"/
+                      emote Gus 9/ speak Gus \"Why is it snowing only on the town and the farm?\"$2/
+                      emote George 12/ speak George \"I bet it's those two hooligans that just moved into town! Where are they even staying?\"$3/ 
+                      speak Marnie \"I've seen them in the forest a few times, maybe they set up camp there? I'm sure it must be rough with this snow.\"$s/
+                      speak Lewis \"Well I'm sure it's not them, how could they make it snow?$5#$b# Regardless, make sure you all stay warm today!\"$h/
+                      emote Gus 16/ speak Gus \"I know what'll keep us warm - round on the house at Saloon tonight!\"$h/
+                      speak Pam \"Now that's what I'm talking about!\"$h/ move George 0 12 2 Marnie 0 12 2 Gus 0 12 2 Pam 0 12 2 farmer 0 6 1 / move Lewis 0 0 3/
+                      emote Lewis 16/ speak Lewis \"Oh @! Just the person I wanted to see.#$b# As much as I hate to admit it, George may have been on to something.$s#$b#
+                      As the mayor, I hear about everything that goes on in this town.#$b# And I've heard a lot of rumors about the two new folks. People are saying they've got bad mojo.
+                      #3#$b# Just keep an eye on them for me, if you can. I'm sure they're good people.\"/ end position 27 61"
+            }
+        }
+    ]
+}
