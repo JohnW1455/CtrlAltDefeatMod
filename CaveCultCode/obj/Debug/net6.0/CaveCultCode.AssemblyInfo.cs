@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CaveCultCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e5e36c87b15e6e571ce4ffa4a68f14fbe1f2ecd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa624906f6801ed9b4b626ac554d02fa8377887d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CaveCultCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CaveCultCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,6 +15,7 @@ namespace CaveCultCode
     internal sealed class ModEntry : Mod
     {
         CustomWeaponEnchantment customEnchant = new CustomWeaponEnchantment();
+        Altar altar;
 
         /*********
         ** Public methods
@@ -24,6 +25,7 @@ namespace CaveCultCode
         public override void Entry(IModHelper helper)
         {
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+            this.altar = new Altar(helper);
         }
 
 
@@ -48,6 +50,16 @@ namespace CaveCultCode
             {
                 this.Monitor.Log($"Ritual dagger has {customEnchant.CurrentKills}", LogLevel.Debug);
             }
+            if(e.Button == SButton.MouseLeft)
+            {
+                if(Game1.player.CurrentTool.DisplayName == "Ritual Dagger")
+                {
+                    if (Game1.player.Position.Equals(altar.Position))
+                    {
+                        altar.activateAltar(customEnchant);
+                    }
+                }
+            }
 
             // print button presses to the console window
             this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
@@ -59,6 +71,9 @@ namespace CaveCultCode
             weapon.AddEnchantment(customEnchant);
             weapon.ParentSheetIndex = 65;
             Game1.player.addItemToInventory(weapon);
+
+            
         }
+
     }
 }
