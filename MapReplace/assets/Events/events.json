@@ -16,6 +16,13 @@
                       As the mayor, I hear about everything that goes on in this town.#$b# And I've heard a lot of rumors about the two new folks. People are saying they've got bad mojo.
                       #3#$b# Just keep an eye on them for me, if you can. I'm sure they're good people.\"/ end position 27 61"
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/GameStateQuery PLAYER_HAS_SEEN_EVENT Current CAD.TCC_Town_event1a ": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/ skippable/ pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+            }
         }
     ]
 }

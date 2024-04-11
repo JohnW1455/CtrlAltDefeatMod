@@ -1,3 +1,12 @@
 {
-  "CAD.TCC_CultCave_curseEvent/": "Cyclops/23 17/Rodger 21 17 2 Kacy 25 19 1 farmer 23 14 2/emote Kacy 56/pause 1000/move Rodger 0 0 0/jump Rodger/emote Rodger 16/move Kacy 0 0 0/jump Kacy/emote Kacy 16/speed Kacy 6/move Kacy -2 0 0/speed Kacy 6/move Kacy 0 -2 0/speak Kacy \"Who dares trespass!?!\"$a/move Rodger 0 -3 1/speak Rodger \"Is that the farmer? I think ${his^her^their}$ name is @.\"/speak Kacy \"Well it looks like you've stumbled into the wrong place at the wrong time.\"$a/faceDirection Rodger 2/speak Rodger \"Hold on... I've heard ${he's^she's^they're}$ pretty handy. We can put ${him^her^them}$ to use.\"/faceDirection Rodger 1/speak Kacy \"I like the way you're thinking. Hey @! Oogidie boogidie boogle boo!\"$h/screenFlash 2/startJittering/speak Kacy \"I've just cursed you farmer${boy^girl^them}$! If you EVER want to be free from it you better do what we say.\"$h/speak Rodger \"You can start by getting us an emerald.\"/speak Kacy \"Make sure it's nice and shiny, too!\"/speak Rodger \"Bring it to me when you've collected it.\"/stopJittering/move Kacy 0 -2 0/speak Kacy \"Now get out!\"$a/pause 500/addQuest 37362/end warpOut"
+  "CAD.TCC_CultCave_curseEvent/": "Cyclops/44 32/Rodger 42 32 2 Kacy 47 34 1 farmer 44 29 2/
+  emote Kacy 56/pause 1000/move Rodger 0 0 0/jump Rodger/emote Rodger 16/move Kacy 0 0 0/jump Kacy/emote Kacy 16/speed Kacy 6/
+  move Kacy -3 0 0/speed Kacy 6/move Kacy 0 -2 0/speak Kacy \"Who dares trespass!?!\"$a/move Rodger 0 -3 1/
+  speak Rodger \"Is that the farmer? I think ${his^her^their}$ name is @.\"/
+  speak Kacy \"Well it looks like you've stumbled into the wrong place at the wrong time.\"$a/
+  faceDirection Rodger 2/speak Rodger \"Hold on... I've heard ${he's^she's^they're}$ pretty handy. We can put ${him^her^them}$ to use.\"/
+  faceDirection Rodger 1/speak Kacy \"I like the way you're thinking. Hey @! Oogidie boogidie boogle boo!\"$h/screenFlash 2/startJittering/
+  speak Kacy \"I've just cursed you farmer${boy^girl^them}$! If you EVER want to be free from it you better do what we say.\"$h/
+  speak Rodger \"You can start by getting us an emerald.\"/speak Kacy \"Make sure it's nice and shiny, too!\"/
+  speak Rodger \"Bring it to me when you've collected it.\"/stopJittering/move Kacy 0 -2 0/speak Kacy \"Now get out!\"$a/pause 500/addQuest 37362/end warpOut"
 }
