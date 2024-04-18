@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="left-down" width="75" height="75" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="Warp" value="44 27 Forest 101 73"/>
+ </properties>
  <tileset firstgid="1" name="mine" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="mine.png" width="256" height="288"/>
  </tileset>
@@ -22,7 +25,13 @@
   <image source="coopTiles.png" width="64" height="336"/>
  </tileset>
  <tileset firstgid="6144" name="townInterior(NASH_EDITION)" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="townInterior(NASH_EDITION).png" width="512" height="1088"/>
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="8320" name="townInterior(NASH_EDITION)" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="10496" name="CaveLevel2" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="mine.png" width="256" height="288"/>
  </tileset>
  <layer id="1" name="Back" width="75" height="75">
   <data encoding="csv">
