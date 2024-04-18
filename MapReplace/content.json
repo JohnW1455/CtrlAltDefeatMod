@@ -8,6 +8,20 @@
   ],
   "Changes": [
     {
+      "Action": "Load",
+      "Target": "Maps/Custom_Cult_Cave",
+      "FromFile": "assets/CultCave.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_Cult_Cave",
+      "FromFile": "assets/Events/BlankEvent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Events/events.json"
+    },
+    {
       "Action": "EditData",
       "Target": "Data/LocationContexts",
       "Entries": {
@@ -76,10 +90,6 @@
       "Update": "OnLocationChange"
     },
     {
-      "Action": "Include",
-      "FromFile": "assets/Events/events.json"
-    },
-    {
       "Action": "EditMap",
       "Target": "Maps/Forest",
       "FromFile": "assets/Forest2.tmx"
@@ -119,6 +129,56 @@
       "Action": "Load",
       "Target": "Strings/schedules/Kacy",
       "FromFile": "assets/NPC/KacyScheduleStrings.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Kacy": {
+          "DisplayName": "Kacy",
+          "BirthSeason": "Summer",
+          "BirthDay": 15,
+          "HomeRegion": "Forest",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": null,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": null,
+          "CanVisitIsland": null,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": 10,
+          "DumpsterDiveEmote": null,
+          "FlowerDanceCanDance": false,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Cult_Cave",
+              "Tile": {
+                "X": 47,
+                "Y": 33
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
     },
     {
       "Action": "EditData",
@@ -221,8 +281,8 @@
               "Condition": null,
               "Location": "Custom_Cult_Cave",
               "Tile": {
-                "X": 23,
-                "Y": 23
+                "X": 39,
+                "Y": 31
               },
               "Direction": "down"
             }
@@ -238,8 +298,8 @@
       }
     },
     {
-      "Action":"EditData",
-      "Target":"Data/weapons",
+      "Action": "EditData",
+      "Target": "Data/weapons",
       "Entries": {
         "65": {
           "Name": "Ritual Dagger",
@@ -266,15 +326,52 @@
       }
     },
     {
-      "Action":"Load",
-      "Target":"Tilesheets/weapons",
-      "FromFile":"assets/weapons.png"
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "Unlucky": {
+          "DisplayName": "Unlucky!",
+          "Description": "Kacy has cursed you to be unlucky.",
+          "IsDebuff": false,
+          "Duration": -2,
+          "MaxDuration": -1,
+          "IconTexture": "TileSheets\\BuffsIcons",
+          "IconSpriteIndex": 14,
+          "Effects": {
+            "FarmingLevel": 0.0,
+            "FishingLevel": 0.0,
+            "MiningLevel": 0.0,
+            "LuckLevel": -0.5,
+            "ForagingLevel": 0.0,
+            "MaxStamina": 0.0,
+            "MagneticRadius": 0.0,
+            "Speed": 0.0,
+            "Defense": 0.0,
+            "Attack": 0.0
+          },
+          "ActionsOnApply": null,
+          "CustomFields": null
+        }
+      }
     },
-    
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "CAD.TCC_RecurseDaily": {
+          "Id": "CAD.TCC_RecurseDaily",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent",
+          "Actions": [
+            "AddBuff Unlucky"
+          ]
+        }
+      }
+    },
     {
       "Action": "Load",
-      "Target": "Data/Events/Custom_Cult_Cave",
-      "FromFile": "assets/Events/Custom_Cult_Cave.json"
+      "Target": "Tilesheets/weapons",
+      "FromFile": "assets/weapons.png"
     },
     {
       "Action": "EditData",
@@ -302,6 +399,15 @@
       "Target": "Data/Quests",
       "Entries": {
         "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now..."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "37366": "Location/Our Ewest Member Part 1/Kacy and Rodger have tasked you with recruiting Emily into the cult. Go to her house to convince her./Go to Emily's house./HaleyHouse/-1/0/-1/false",
+        "37367": "ItemDelivery/Our Ewest Member Part 2/Offer Emily 3 cloth as a sign of trust and gratitude from Kacy and Rodger/Bring Emily 3 cloth./Emily 428 3/37368/0/-1/true/A gift from Kacy and Rodger? Count me in!",
+        "37368": "Basic/Our Ewest Member Part 3/You'll want to introduce Emily to her mysterious benefactors. Go back to Kacy and Rodger's cave to introduce Emily to them./Return to Kacy and Rodger's cave./null/-1/0/-1/false"
       }
     }
   ]

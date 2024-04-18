@@ -21,7 +21,51 @@
             "Action": "EditData",
             "Target": "Data/Events/Forest",
             "Entries": {
-              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/GameStateQuery PLAYER_HAS_SEEN_EVENT Current CAD.TCC_Town_event1a ": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/ skippable/ pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/SawEvent CAD.TCC_Town_event1a ": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/ skippable/ pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_Cult_Cave",
+            "Entries": {
+                "CAD.TCC_CultCave_curseEvent/": "Cyclops/44 32/Rodger 42 32 2 Kacy 47 34 1 farmer 44 29 2/
+                emote Kacy 56/pause 1000/move Rodger 0 0 0/jump Rodger/emote Rodger 16/move Kacy 0 0 0/jump Kacy/emote Kacy 16/speed Kacy 6/
+                move Kacy -3 0 0/speed Kacy 6/move Kacy 0 -2 0/speak Kacy \"Who dares trespass!?!\"$a/move Rodger 0 -3 1/
+                speak Rodger \"Is that the farmer? I think ${his^her^their}$ name is @.\"/
+                speak Kacy \"Well it looks like you've stumbled into the wrong place at the wrong time.\"$a/
+                faceDirection Rodger 2/speak Rodger \"Hold on... I've heard ${he's^she's^they're}$ pretty handy. We can put ${him^her^them}$ to use.\"/
+                faceDirection Rodger 1/speak Kacy \"I like the way you're thinking. Hey @! Oogidie boogidie boogle boo!\"$h/screenFlash 2/startJittering/action AddBuff Unlucky/
+                speak Kacy \"I've just cursed you farmer${boy^girl^them}$! If you EVER want to be free from it you better do what we say.\"$h/
+                speak Rodger \"You can start by getting us an emerald.\"/speak Kacy \"Make sure it's nice and shiny, too!\"/
+                speak Rodger \"Bring it to me when you've collected it.\"/stopJittering/move Kacy 0 -2 0/speak Kacy \"Now get out!\"$a/pause 500/addQuest 37362/end warpOut",
+                "CAD.TCC_CultCave_Act2TransitionEvent/SawEvent CAD.TCC_CultCave_curseEvent/GameStateQuery PLAYER_HAS_ITEM Current 706 3/gameStateQuery {{HasActiveQuest |contains=37365}}": "Cyclops/
+                44 32/Rodger 38 32 2 Kacy 47 31 3 farmer 44 31 1/ action RemoveItem 706 3/ action RemoveQuest 37365/ pause 1000/ 
+                speak Kacy \"Excellent work my minion! You have proven yourself worthy to join our cause.#$b#However, to achieve our goals, we are going to need more members.\"/
+                faceDirection farmer 3 true/ advancedMove Rodger false 0 -1 4 0/ 
+                speak Rodger \"I've been watching people around town and we have decided that Emily will be our next target.#$b#I've heard she’s quite the seamstress, so a gift of cloth should persuade her.\"/
+                faceDirection farmer 1 true/ move Kacy -1 0 3/ speak Kacy \"Now go forth! Seek out Emily and convince her to join us!\"/ addQuest 37366/ end warpOut",
+                "CAD.TCC_CultCave_IntroduceEmily/SawEvent CAD.TCC_HaleyHouse_EmilyRecruitBegin/gameStateQuery {{HasActiveQuest |contains=37368}}": "Cyclops/44 31/
+                Rodger 42 32 1 Kacy 42 31 1 Emily 44 28 2 farmer 44 29 2/ action RemoveQuest 37368/move farmer 0 3 3/ move Emily 0 3 3/ speak Kacy \"Ah, I see our newest member has arrived!\"/ 
+                speak Rodger\"Welcome. We're glad you're here.\"/speak Emily\"I'm glad to be here, this place looks so cool!\"/
+                speak Kacy \"Right?! I decorated it myself!\"/emote Kacy 20/speak Rodger\"Good job @. Now who should we recruit next?\"/ faceDirection Kacy 2/
+                faceDirection Rodger 0/ speak Kacy \"What about Clint? He seems lonely and vulnerable.\"/speak Rodger \"Having a blacksmith among us does sound useful.\"/
+                speak Kacy\"What do you think would get him to join us?\"/ faceDirection Kacy 1/ faceDirection Rodger 1/
+                speak Emily \"Clint is can get really into his work.#$b#If you get him something blacksmith related he'd be willing to join.\"/
+                speak Kacy \"Alright @, go find Clint and convince him to join us!\"/end warpOut"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/HaleyHouse",
+            "Entries": {
+                "CAD.TCC_HaleyHouse_EmilyRecruitBegin/SawEvent CAD.TCC_CultCave_Act2TransitionEvent": "none/6 18/
+                Haley 5 8 2 Emily 2 17 3 farmer 2 23 0/removeTile 2 17 Buildings/ removeTile 2 16 Front/ move farmer 0 -3 0/ pause 500/ faceDirection Emily 2 true/ jump Emily/ emote Emily 16/
+                pause 500/ speak Emily \"Oh hi @, what are you doing here?\"$3/ emote farmer 8/ pause 500/
+                speak Emily \"The new arrivals in town are doing magic and want me to join them?$0#$b# That's so cool!\"$1/ move Haley 0 4 2/ doAction 5 13/ move Haley 0 4 2/ faceDirection Emily 1/
+                speak Haley \"What are you so excited about?\"$3/ speak Emily \"The new folks want to do magic with me!\"$1/
+                speak Haley \"Haven't you heard the rumors? Those weirdos are super sketchy.\"$3/
+                speak Emily \"That's mean, don't you think? You don't even know them.\"$5/ speak Haley \"Whatever.\"$3/move Haley 0 -4 0/ move Haley 0 -4 0/
+                speak Emily \"Truth be told, I don't know them either.$2#$b#If you can prove to me they're cool I'll join their little group. Sound good?\"$0/ addQuest 37367/ end warpOut"
             }
         }
     ]
