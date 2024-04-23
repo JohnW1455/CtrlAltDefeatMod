@@ -24,6 +24,7 @@ namespace CaveCultCode
         public override void Entry(IModHelper helper)
         {
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
+            helper.Events.Player.Warped += Player_Warped;
         }
 
 
@@ -59,6 +60,61 @@ namespace CaveCultCode
             weapon.AddEnchantment(customEnchant);
             weapon.ParentSheetIndex = 65;
             Game1.player.addItemToInventory(weapon);
+        }
+
+        private void Player_Warped(object sender, StardewModdingAPI.Events.WarpedEventArgs e)
+        {
+            Monster[] slimes = new Monster[3];
+
+            if(e.NewLocation.Name == "Custom_Cave_Level1")
+            {
+                Game1.hudMessages.Add(new HUDMessage("Welcome to" + e.NewLocation.Name, HUDMessage.error_type));
+                slimes[0] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 20 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[1] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 25 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[2] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 30 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+
+                foreach(Monster slime in slimes)
+                {
+                    Game1.currentLocation.characters.Add(slime);
+                }
+
+                Array.Clear(slimes);
+            }
+
+            if (e.NewLocation.Name == "Custom_Cave_Level2")
+            {
+                Game1.hudMessages.Add(new HUDMessage("Welcome to" + e.NewLocation.Name, HUDMessage.error_type));
+                slimes[0] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 20 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[1] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 25 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[2] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(15 * 64, 30 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+
+                foreach (Monster slime in slimes)
+                {
+                    Game1.currentLocation.characters.Add(slime);
+                }
+
+                Array.Clear(slimes);
+            }
+
+            if (e.NewLocation.Name == "Custom_Cave_Level3")
+            {
+                Game1.hudMessages.Add(new HUDMessage("Welcome to" + e.NewLocation.Name, HUDMessage.error_type));
+                slimes[0] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(20 * 64, 20 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[1] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(20 * 64, 25 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+                slimes[2] = new GreenSlime(new Microsoft.Xna.Framework.Vector2(20 * 64, 30 * 64), Microsoft.Xna.Framework.Color.BlueViolet);
+
+                foreach (Monster slime in slimes)
+                {
+                    Game1.currentLocation.characters.Add(slime);
+                }
+
+                Array.Clear(slimes);
+            }
+
+            else
+            {
+                Game1.hudMessages.Add(new HUDMessage("NO THIS IS NOT THE RIGHT MAP", HUDMessage.error_type));
+            }
         }
     }
 }
