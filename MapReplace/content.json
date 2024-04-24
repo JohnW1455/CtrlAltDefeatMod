@@ -9,6 +9,12 @@
   "Changes": [
     {
       "Action": "Load",
+      "Target": "Data/Events/Blacksmith",
+      "FromFile": "assets/Events/BlankEvent.json",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
       "Target": "Maps/Custom_Cult_Cave",
       "FromFile": "assets/CultCave.tmx"
     },
@@ -98,7 +104,7 @@
       "Action": "EditMap",
       "Target": "Maps/Forest",
       "AddWarps": [
-        "101 72 Custom_Cult_Cave 44 28"
+        "118 91 Custom_Cult_Cave 44 28"
       ],
       "When": {
         "HasSeenEvent |Contains=CAD.TCC_Forest_surpriseEvent": true
@@ -377,37 +383,18 @@
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish."
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!"
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?"
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now..."
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
+        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish.",
+        "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!",
+        "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?",
+        "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now...",
         "37366": "Location/Our Ewest Member Part 1/Kacy and Rodger have tasked you with recruiting Emily into the cult. Go to her house to convince her./Go to Emily's house./HaleyHouse/-1/0/-1/false",
-        "37367": "ItemDelivery/Our Ewest Member Part 2/Offer Emily 3 cloth as a sign of trust and gratitude from Kacy and Rodger/Bring Emily 3 cloth./Emily 428 3/37368/0/-1/true/A gift from Kacy and Rodger? Count me in!",
-        "37368": "Basic/Our Ewest Member Part 3/You'll want to introduce Emily to her mysterious benefactors. Go back to Kacy and Rodger's cave to introduce Emily to them./Return to Kacy and Rodger's cave./null/-1/0/-1/false"
+        "37367": "Basic/Our Ewest Member Part 2/Offer Emily 3 cloth as a sign of trust and gratitude from Kacy and Rodger./Bring 3 cloth to Emily's house./null/-1/0/-1/false",
+        "37368": "Basic/Our Ewest Member Part 3/You'll want to introduce Emily to her mysterious benefactors. Go back to Kacy and Rodger's cave to introduce Emily to them./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37369": "Basic/Iron Things Out Part 1/Go to Clint's house and find a way to get him to join Kacy and Rodger./Go to Clint's house./null/-1/0/-1/false",
+        "37370": "Basic/Iron Things Out Part 2/Offer Clint 1 Iron Bar and he'll be sure to join Kacy and Rodger/Bring 1 Iron Bar back to Clint's house./null/-1/0/-1/false",
+        "37371": "Basic/Iron Things Out Part 3/Go back to Kacy and Rodger's cave to introduce Clint and officially induct him./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37372": "Basic/Field Work Part 1/Go to Alex's house and find out what kind of sporty thingamajig will get him to join./Go to Alex's house./null/-1/0/-1/false",
+        "37373": "Basic/Field Work Part 2/"
       }
     }
   ]
