@@ -120,7 +120,7 @@
       "Action": "EditMap",
       "Target": "Maps/Forest",
       "AddWarps": [
-        "118 91 Custom_Cult_Cave 44 28"
+        "117 91 Custom_Cult_Cave 44 28"
       ],
       "When": {
         "HasSeenEvent |Contains=CAD.TCC_Forest_surpriseEvent": true
