@@ -62,6 +62,61 @@ namespace CaveCultCode
             Game1.player.addItemToInventory(weapon);
         }
 
+<<<<<<< Updated upstream
+=======
+        public void activateAltar(int numberOfKills)
+        {
+            if (numberOfKills > 5)
+            {
+                this.numberOfKills = 0;
+                Game1.addHUDMessage(new HUDMessage("Something happened", 2));
+                rainTomorrow(Game1.player);
+
+            }
+            else
+            {
+                Game1.addHUDMessage(new HUDMessage("Hmmm doesn't seem to be working... I should come back when I've charged it up more.", 2));
+            }
+        }
+
+        private void rainTomorrow(Farmer who)
+        {
+            GameLocation currentLocation = who.currentLocation;
+            string text = currentLocation.GetLocationContextId();
+            LocationContextData locationContext = currentLocation.GetLocationContext();
+            if (!locationContext.AllowRainTotem)
+            {
+                Game1.showRedMessageUsingLoadString("Strings\\UI:Item_CantBeUsedHere");
+                return;
+            }
+
+            if (locationContext.RainTotemAffectsContext != null)
+            {
+                text = locationContext.RainTotemAffectsContext;
+            }
+
+            bool flag = false;
+            if (text == "Default")
+            {
+                if (!Utility.isFestivalDay(Game1.dayOfMonth + 1, Game1.season))
+                {
+                    Game1.netWorldState.Value.WeatherForTomorrow = (Game1.weatherForTomorrow = "Rain");
+                    flag = true;
+                }
+            }
+            else
+            {
+                currentLocation.GetWeather().WeatherForTomorrow = "Rain";
+                flag = true;
+            }
+
+            if (flag)
+            {
+                Game1.pauseThenMessage(2000, Game1.content.LoadString("Strings\\StringsFromCSFiles:Object.cs.12822"));
+            }
+        }
+
+>>>>>>> Stashed changes
         private void Player_Warped(object sender, StardewModdingAPI.Events.WarpedEventArgs e)
         {
             Monster[] slimes = new Monster[3];
