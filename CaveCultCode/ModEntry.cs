@@ -75,7 +75,7 @@ namespace CaveCultCode
             {
                 if (Game1.player.CurrentTool.DisplayName == "Ritual Dagger")
                 {
-                    if (Game1.currentCursorTile == new Vector2(10, 1))
+                    if (Game1.currentCursorTile == new Vector2(21, 31))
                     {
                         activateAltar(numberOfKills);
                     }
@@ -176,6 +176,7 @@ namespace CaveCultCode
             {
                 Game1.pauseThenMessage(2000, Game1.content.LoadString("Strings\\StringsFromCSFiles:Object.cs.12822"));
             }
+        }
 
         private void Player_Warped(object sender, StardewModdingAPI.Events.WarpedEventArgs e)
         {
