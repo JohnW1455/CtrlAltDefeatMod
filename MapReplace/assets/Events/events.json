@@ -185,7 +185,6 @@
                 speak Leah \"Hello again @.#$b#Oh, and you have the maple syrup I asked for. Thank you!\"/ emote Leah 20/
                 speak Leah \"Ask me next time you go to Kacy and Rodger's place to join you.\"/ addQuest 37380/ end warpOut"
             }
-        }
-        
+        }   
     ]
 }
