@@ -4,9 +4,45 @@
     {
       "Name": "Custom_Cult_Cave",
       "FromMapFile": "assets/CultCave.tmx"
+    }, 
+    {
+      "Name":"Custom_Cave_Level1",
+      "FromMapFile": "assets/CaveLevel1.tmx"
+    },
+    {
+      "Name":"Custom_Cave_Level2",
+      "FromMapFile": "assets/CaveLevel2.tmx"
+    },
+    {
+      "Name":"Custom_Cave_Level3",
+      "FromMapFile": "assets/CaveLevel3.tmx"
+    },
+    {
+      "Name":"Custom_Ritual_Room",
+      "FromMapFile": "assets/RitualRoom.tmx"
     }
   ],
   "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Blacksmith",
+      "FromFile": "assets/Events/BlankEvent.json",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Custom_Cult_Cave",
+      "FromFile": "assets/CultCave.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_Cult_Cave",
+      "FromFile": "assets/Events/BlankEvent.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Events/events.json"
+    },
     {
       "Action": "EditData",
       "Target": "Data/LocationContexts",
@@ -71,26 +107,9 @@
       },
       "When": {
         "HasSeenEvent |Contains=CAD.TCC_Town_event1a": false,
-        "Query: {{DaysPlayed}} >= 1": true
+        "Query: {{DaysPlayed}} >= 3": true
       },
       "Update": "OnLocationChange"
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Events/Town",
-      "Entries": {
-        "CAD.TCC_Town_event1a/Season Spring/GameStateQuery WEATHER Town Snow": "none/29 64/ Lewis 29 61 2 George 27 62 1 Marnie 28 64 0 Gus 30 64 0 Pam 31 62 3 farmer 27 55 2 / skippable/ pause 750/
-                speak Lewis \"Thank you everyone for coming out on this abnormally snowy day.#$b# It seems like tomorrow will be snowy as well.\"/
-                emote Gus 9/ speak Gus \"Why is it snowing only on the town and the farm?\"$2/
-                emote George 12/ speak George \"I bet it's those two hooligans that just moved into town! Where are they even staying?\"$3/ 
-                speak Marnie \"I've seen them in the forest a few times, maybe they set up camp there? I'm sure it must be rough with this snow.\"$s/
-                speak Lewis \"Well I'm sure it's not them, how could they make it snow?$5#$b# Regardless, make sure you all stay warm today!\"$h/
-                emote Gus 16/ speak Gus \"I know what'll keep us warm - round on the house at Saloon tonight!\"$h/
-                speak Pam \"Now that's what I'm talking about!\"$h/ move George 0 12 2 Marnie 0 12 2 Gus 0 12 2 Pam 0 12 2 farmer 0 6 1 / move Lewis 0 0 3/
-                emote Lewis 16/ speak Lewis \"Oh @! Just the person I wanted to see.#$b# As much as I hate to admit it, George may have been on to something.$s#$b#
-                As the mayor, I hear about everything that goes on in this town.#$b# And I've heard a lot of rumors about the two new folks. People are saying they've got bad mojo.
-                #3#$b# Just keep an eye on them for me, if you can. I'm sure they're good people.\"/ end position 27 61"
-      }
     },
     {
       "Action": "EditMap",
@@ -101,13 +120,17 @@
       "Action": "EditMap",
       "Target": "Maps/Forest",
       "AddWarps": [
-        "101 72 Custom_Cult_Cave 23 15"
-      ]
+        "117 91 Custom_Cult_Cave 44 28"
+      ],
+      "When": {
+        "HasSeenEvent |Contains=CAD.TCC_Forest_surpriseEvent": true
+      },
+      "Update": "OnTimeChange"
     },
     {
       "Action": "Load",
       "Target": "Characters/Kacy",
-      "FromFile": "assets/NPC/KacyOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/KacySpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -131,6 +154,56 @@
     },
     {
       "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Kacy": {
+          "DisplayName": "Kacy",
+          "BirthSeason": "Summer",
+          "BirthDay": 15,
+          "HomeRegion": "Forest",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanSocialize": null,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": null,
+          "CanVisitIsland": null,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "DumpsterDiveFriendshipEffect": 10,
+          "DumpsterDiveEmote": null,
+          "FlowerDanceCanDance": false,
+          "WinterStarGifts": [],
+          "WinterStarParticipant": null,
+          "UnlockConditions": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "Custom_Cult_Cave",
+              "Tile": {
+                "X": 47,
+                "Y": 33
+              },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
       "Target": "Data/NPCDispositions",
       "Entries": {
         "Kacy": "adult/polite/neutral/positive/female/not-datable//Town/summer 15//Forest 101 74/Kacy"
@@ -146,7 +219,7 @@
     {
       "Action": "Load",
       "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerOverworldSpritesheet.png"
+      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
     },
     {
       "Action": "Load",
@@ -190,31 +263,6 @@
       }
     },
     {
-      "Action": "Load",
-      "Target": "Characters/Rodger",
-      "FromFile": "assets/NPC/RodgerSpriteSheet.png"
-    },
-    {
-      "Action": "Load",
-      "Target": "Portraits/Rodger",
-      "FromFile": "assets/NPC/RodgerPortraits.png"
-    },
-    {
-      "Action": "Load",
-      "Target": "Characters/Dialogue/Rodger",
-      "FromFile": "assets/NPC/RodgerDialogue.json"
-    },
-    {
-      "Action": "Load",
-      "Target": "Characters/schedules/Rodger",
-      "FromFile": "assets/NPC/RodgerSchedule.json"
-    },
-    {
-      "Action": "Load",
-      "Target": "Strings/schedules/Rodger",
-      "FromFile": "assets/NPC/RodgerScheduleStrings.json"
-    },
-    {
       "Action": "EditData",
       "Target": "Data/Characters",
       "Entries": {
@@ -255,8 +303,8 @@
               "Condition": null,
               "Location": "Custom_Cult_Cave",
               "Tile": {
-                "X": 23,
-                "Y": 23
+                "X": 39,
+                "Y": 31
               },
               "Direction": "down"
             }
@@ -272,8 +320,8 @@
       }
     },
     {
-      "Action":"EditData",
-      "Target":"Data/weapons",
+      "Action": "EditData",
+      "Target": "Data/weapons",
       "Entries": {
         "65": {
           "Name": "Ritual Dagger",
@@ -300,48 +348,69 @@
       }
     },
     {
-      "Action":"Load",
-      "Target":"Tilesheets/weapons",
-      "FromFile":"assets/weapons.png"
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "Unlucky": {
+          "DisplayName": "Unlucky!",
+          "Description": "Kacy has cursed you to be unlucky.",
+          "IsDebuff": false,
+          "Duration": -2,
+          "MaxDuration": -1,
+          "IconTexture": "TileSheets\\BuffsIcons",
+          "IconSpriteIndex": 14,
+          "Effects": {
+            "FarmingLevel": 0.0,
+            "FishingLevel": 0.0,
+            "MiningLevel": 0.0,
+            "LuckLevel": -0.5,
+            "ForagingLevel": 0.0,
+            "MaxStamina": 0.0,
+            "MagneticRadius": 0.0,
+            "Speed": 0.0,
+            "Defense": 0.0,
+            "Attack": 0.0
+          },
+          "ActionsOnApply": null,
+          "CustomFields": null
+        }
+      }
     },
     {
       "Action": "EditData",
-      "Target": "Data/Events/Forest",
+      "Target": "Data/TriggerActions",
       "Entries": {
-        "CAD.TCC_Forest_surpriseEvent/": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+        "CAD.TCC_RecurseDaily": {
+          "Id": "CAD.TCC_RecurseDaily",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent",
+          "Actions": [
+            "AddBuff Unlucky"
+          ]
+        }
       }
     },
     {
       "Action": "Load",
-      "Target": "Data/Events/Custom_Cult_Cave",
-      "FromFile": "assets/Events/Custom_Cult_Cave.json"
+      "Target": "Tilesheets/weapons",
+      "FromFile": "assets/weapons.png"
     },
     {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish."
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!"
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?"
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Quests",
-      "Entries": {
-        "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now..."
+        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish.",
+        "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!",
+        "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?",
+        "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now...",
+        "37366": "Location/Our Ewest Member Part 1/Kacy and Rodger have tasked you with recruiting Emily into the cult. Go to her house to convince her./Go to Emily's house./HaleyHouse/-1/0/-1/false",
+        "37367": "Basic/Our Ewest Member Part 2/Offer Emily 3 cloth as a sign of trust and gratitude from Kacy and Rodger./Bring 3 cloth to Emily's house./null/-1/0/-1/false",
+        "37368": "Basic/Our Ewest Member Part 3/You'll want to introduce Emily to her mysterious benefactors. Go back to Kacy and Rodger's cave to introduce Emily to them./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37369": "Basic/Iron Things Out Part 1/Go to Clint's house and find a way to get him to join Kacy and Rodger./Go to Clint's house./null/-1/0/-1/false",
+        "37370": "Basic/Iron Things Out Part 2/Offer Clint 1 Iron Bar and he'll be sure to join Kacy and Rodger/Bring 1 Iron Bar back to Clint's house./null/-1/0/-1/false",
+        "37371": "Basic/Iron Things Out Part 3/Go back to Kacy and Rodger's cave to introduce Clint and officially induct him./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37372": "Basic/Field Work Part 1/Go to Alex's house and find out what kind of sporty thingamajig will get him to join./Go to Alex's house./null/-1/0/-1/false",
+        "37373": "Basic/Field Work Part 2/"
       }
     }
   ]

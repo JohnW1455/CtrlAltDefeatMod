@@ -1,0 +1,107 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "CAD.TCC_Town_event1a/Season Spring/GameStateQuery WEATHER Town Snow": "none/29 64/ Lewis 29 61 2 George 27 62 1 Marnie 28 64 0 Gus 30 64 0 Pam 31 62 3 farmer 27 55 2 / skippable/ pause 750/
+                      speak Lewis \"Thank you everyone for coming out on this abnormally snowy day.#$b# It seems like tomorrow will be snowy as well.\"/
+                      emote Gus 9/ speak Gus \"Why is it snowing only on the town and the farm?\"$2/
+                      emote George 12/ speak George \"I bet it's those two hooligans that just moved into town! Where are they even staying?\"$3/ 
+                      speak Marnie \"I've seen them in the forest a few times, maybe they set up camp there? I'm sure it must be rough with this snow.\"$s/
+                      speak Lewis \"Well I'm sure it's not them, how could they make it snow?$5#$b# Regardless, make sure you all stay warm today!\"$h/
+                      emote Gus 16/ speak Gus \"I know what'll keep us warm - round on the house at Saloon tonight!\"$h/
+                      speak Pam \"Now that's what I'm talking about!\"$h/ move George 0 12 2 Marnie 0 12 2 Gus 0 12 2 Pam 0 12 2 farmer 0 6 1 / move Lewis 0 0 3/
+                      emote Lewis 16/ speak Lewis \"Oh @! Just the person I wanted to see.#$b# As much as I hate to admit it, George may have been on to something.$s#$b#
+                      As the mayor, I hear about everything that goes on in this town.#$b# And I've heard a lot of rumors about the two new folks. People are saying they've got bad mojo.
+                      #3#$b# Just keep an eye on them for me, if you can. I'm sure they're good people.\"/ end position 27 61"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/SawEvent CAD.TCC_Town_event1a ": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/ skippable/ pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_Cult_Cave",
+            "Entries": {
+                "CAD.TCC_CultCave_curseEvent/": "Cyclops/44 32/Rodger 42 32 2 Kacy 47 34 1 farmer 44 29 2/
+                emote Kacy 56/pause 1000/move Rodger 0 0 0/jump Rodger/emote Rodger 16/move Kacy 0 0 0/jump Kacy/emote Kacy 16/speed Kacy 6/
+                move Kacy -3 0 0/speed Kacy 6/move Kacy 0 -2 0/speak Kacy \"Who dares trespass!?!\"$a/move Rodger 0 -3 1/
+                speak Rodger \"Is that the farmer? I think ${his^her^their}$ name is @.\"/
+                speak Kacy \"Well it looks like you've stumbled into the wrong place at the wrong time.\"$a/
+                faceDirection Rodger 2/speak Rodger \"Hold on... I've heard ${he's^she's^they're}$ pretty handy. We can put ${him^her^them}$ to use.\"/
+                faceDirection Rodger 1/speak Kacy \"I like the way you're thinking. Hey @! Oogidie boogidie boogle boo!\"$h/screenFlash 2/startJittering/action AddBuff Unlucky/
+                speak Kacy \"I've just cursed you farmer${boy^girl^them}$! If you EVER want to be free from it you better do what we say.\"$h/
+                speak Rodger \"You can start by getting us an emerald.\"/speak Kacy \"Make sure it's nice and shiny, too!\"/
+                speak Rodger \"Bring it to me when you've collected it.\"/stopJittering/move Kacy 0 -2 0/speak Kacy \"Now get out!\"$a/pause 500/addQuest 37362/end warpOut",
+                "CAD.TCC_CultCave_Act2TransitionEvent/SawEvent CAD.TCC_CultCave_curseEvent/GameStateQuery PLAYER_HAS_ITEM Current 706 3/gameStateQuery {{HasActiveQuest |contains=37365}}": "Cyclops/
+                44 32/Rodger 38 32 2 Kacy 47 31 3 farmer 44 31 1/ action RemoveItem 706 3/ action RemoveQuest 37365/ pause 1000/ 
+                speak Kacy \"Excellent work my minion! You have proven yourself worthy to join our cause.#$b#However, to achieve our goals, we are going to need more members.\"/
+                faceDirection farmer 3 true/ advancedMove Rodger false 0 -1 4 0/ 
+                speak Rodger \"I've been watching people around town and we have decided that Emily will be our next target.#$b#I've heard she’s quite the seamstress, so a gift of cloth should persuade her.\"/
+                faceDirection farmer 1 true/ move Kacy -1 0 3/ speak Kacy \"Now go forth! Seek out Emily and convince her to join us!\"/ addQuest 37366/ end warpOut",
+                "CAD.TCC_CultCave_IntroduceEmily/SawEvent CAD.TCC_HaleyHouse_CompleteEmilyQuest": "Cyclops/44 31/
+                Rodger 42 32 1 Kacy 42 31 1 Emily 44 28 2 farmer 44 29 2/ action RemoveQuest 37368/move farmer 0 3 3/ move Emily 0 3 3/ speak Kacy \"Ah, I see our newest member has arrived!\"/ 
+                speak Rodger \"Welcome. We're glad you're here.\"/speak Emily \"I'm glad to be here, this place looks so cool!\"/
+                speak Kacy \"Right?! I decorated it myself!\"/emote Kacy 20/speak Rodger \"Good job @. Now who should we recruit next?\"/ faceDirection Kacy 2/
+                faceDirection Rodger 0/ speak Kacy \"What about Clint? He seems lonely and vulnerable.\"/speak Rodger \"Having a blacksmith among us does sound useful.\"/
+                speak Kacy \"What do you think would get him to join us?\"/ faceDirection Kacy 1/ faceDirection Rodger 1/
+                speak Emily \"Clint is can get really into his work.#$b#If you get him something blacksmith related he'd be willing to join.\"/
+                speak Kacy \"Alright @, go find Clint and convince him to join us!\"/ addQuest 37369/ end warpOut",
+                "CAD.TCC_CultCave_IntroduceClint/SawEvent CAD.TCC_Blacksmith_CompleteClintQuest": "Cyclops/44 31/
+                Clint 44 28 2 Emily 44 32 0 Kacy 43 32 0 Rodger 42 30 1 farmer 44 29 2/ action RemoveQuest 37371/ move farmer 0 1 2 / move farmer 1 0 2 / move Clint 0 2 2 true/ 
+                speak Kacy \"Our newest and favoritest member has arrived!\"/speak Clint \"Hi everybody.\"/ speak Emily \"Hi Clint!\"/ speak Clint \"Oh, hi Emily!\"$1/ faceDirection Clint 1/
+                speak Clint \"Psst... @...$4#$b#Why didn't you tell me Emily was going to be here?\"$4/ faceDirection Clint 2 true/ speak Kacy \"Now we will discuss who will be the next person we welcome into the fold\"/
+                emote Clint 16/ speak Clint \"How about that jock, Alex?\"/ speak Rodger \"Yes, Alex. That could work.\"/ speak Emily \"He's pretty athletic, so you could probably convince him with something sporty.\"/
+                speak Kacy \"Alright farmer${boy^girl^them}$, you heard the lady. Get that man something sporty!\"/ addQuest 37372/ end warpOut"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/HaleyHouse",
+            "Entries": {
+                "CAD.TCC_HaleyHouse_EmilyRecruitBegin/SawEvent CAD.TCC_CultCave_Act2TransitionEvent": "none/6 18/
+                Haley 5 8 2 Emily 2 17 3 farmer 2 23 0/removeTile 2 17 Buildings/ removeTile 2 16 Front/ move farmer 0 -3 0/ pause 500/ faceDirection Emily 2 true/ jump Emily/ emote Emily 16/
+                pause 500/ speak Emily \"Oh hi @, what are you doing here?\"$3/ emote farmer 8/ pause 500/
+                speak Emily \"The new arrivals in town are doing magic and want me to join them?$0#$b# That's so cool!\"$1/ move Haley 0 4 2/ doAction 5 13/ move Haley 0 4 3/ faceDirection Emily 1/
+                speak Haley \"What are you so excited about?\"$3/ speak Emily \"The new folks want to do magic with me!\"$1/
+                speak Haley \"Haven't you heard the rumors? Those weirdos are super sketchy.\"$3/
+                speak Emily \"That's mean, don't you think? You don't even know them.\"$5/ speak Haley \"Whatever.\"$3// move Haley 0 -4 0 true/ pause 500/faceDirection Emily 0/ move Haley 0 -4 0/ faceDirection Emily 2/
+                speak Emily \"Truth be told, I don't know them either.$2#$b#If you can prove to me they're cool I'll join their little group. Sound good?\"$0/ addQuest 37367/ end warpOut",
+                "CAD.TCC_HaleyHouse_CompleteEmilyQuest/SawEvent CAD.TCC_HaleyHouse_EmilyRecruitBegin/GameStateQuery PLAYER_HAS_ITEM Current 428 3": "none/6 18/
+                Emily 2 18 2 farmer 2 23 0/ move farmer 0 -3 0/ action RemoveItem 428 3/action RemoveQuest 37367/ pause 500/ emote Emily 16/ speak Emily \"What'cha got there? It's a gift from Kacy and Rodger?\"/
+                move farmer 0 -1 0/ speak Emily \"They got me cloth? They know me so well!\"/
+                emote Emily 20/ speak Emily \"I'm really excited to meet them, let's go right now!\"/ addQuest 37368/ end warpOut"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Blacksmith",
+            "Entries": {
+                "CAD.TCC_Blacksmith_ClintRecruitBegin/SawEvent CAD.TCC_CultCave_IntroduceEmily": "none/ 7 14/
+                Clint 11 13 1 farmer 5 18 0/ action RemoveQuest 37369/ pause 500/ move farmer 0 -5 1/ move farmer 1 0 1/ faceDirection Clint 3 true/ jump Clint/ emote Clint 16/
+                speak Clint \"Hello @, what can I do for you?\"/ emote farmer 8/ pause 500/ move Clint -2 0 3/
+                speak Clint \"The new people want me to blacksmith for the group they're forming?\"/
+                speak Clint \"I mean, I guess I could.#$b#But people usually don't go out of their way for me, so forgive me if I'm not convinced.\"$2/ faceDirection Clint 1/ pause 750/ faceDirection Clint 3/ 
+                speak Clint \"I'm kinda in the middle of a project here, but I do need some help.#$b#I'm a little low on iron bars, so if you could bring me one, I promise I'll join them.\"/
+                addQuest 37370/ end warpOut",
+                "CAD.TCC_Blacksmith_CompleteClintQuest/SawEvent CAD.TCC_Blacksmith_ClintRecruitBegin/ GameStateQuery PLAYER_HAS_ITEM Current 335 1": "none/ 7 14/
+                Clint 3 13 2 farmer 5 18 0/ action RemoveQuest 37370/ action RemoveItem 335 1/ move farmer 0 -3 0/ move farmer -2 0 0/ speak Clint \"You got that iron bar I asked for?\" emote farmer 44/
+                emote Clint 40/ speak Clint \"This isn't half bad. Thanks for your help.#$b#Next time you visit Kacy and Rodger, I'll come along.\"/ addQuest 37371 / end warpOut" 
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/JoshHouse",
+            "Entries": {
+                "CAD.TCC_JoshHouse_AlexRecruitBegin/SawEvent CAD.TCC_CultCave_IntroduceClint": "none/ 6 19/
+                Alex 3 17 0 farmer 9 23 0/ action RemoveQuest 37372/ pause 500/ move farmer 0 -4 0/ move farmer -4 0 0/ faceDirection Alex 1/ jump Alex/ emote Alex 16/
+                speak Alex \"Hey, what's up @?#$b#What brings you to mi casa?\"/ emote farmer 8/ pause 500/ "
+            }
+        }
+    ]
+}
