@@ -388,7 +388,7 @@
         "CAD.TCC_RecurseDaily": {
           "Id": "CAD.TCC_RecurseDaily",
           "Trigger": "DayStarted",
-          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent, !PLAYER_HAS_SEEN_EVENT Current CAD.TCC_Forest_postRitualEvent",
           "Actions": [
             "AddBuff Unlucky"
           ]
