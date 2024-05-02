@@ -37,23 +37,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shawg\\.nuget\\packages\\": {},
+    "C:\\Users\\Nashf\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shawg\\OneDrive\\Desktop\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
+      "projectUniqueName": "E:\\Projects\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
       "projectName": "CaveCultCode",
-      "projectPath": "C:\\Users\\shawg\\OneDrive\\Desktop\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
-      "packagesPath": "C:\\Users\\shawg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shawg\\OneDrive\\Desktop\\CtrlAltDefeatMod\\CaveCultCode\\obj\\",
+      "projectPath": "E:\\Projects\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
+      "packagesPath": "C:\\Users\\Nashf\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\CtrlAltDefeatMod\\CaveCultCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\shawg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nashf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -91,8 +91,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -101,7 +100,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="Warp" value="9 8 Custom_Cave_Level1 23 14 33 17 Custom_Cave_Level3 9 8"/>
+ </properties>
  <tileset firstgid="1" name="CaveLevel2" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="../Tilesets/mine.png" width="256" height="288"/>
+  <image source="Tilesets/mine.png" width="256" height="288"/>
  </tileset>
- <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="../Tilesets/paths.png" width="64" height="144"/>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Tilesets/paths.png" width="64" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="40" height="30">
   <data encoding="csv">
@@ -59,7 +62,7 @@
 0,44,79,0,165,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,13,
 0,60,61,0,181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,207,0,
 0,79,10,11,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,221,222,0,0,
-0,79,26,27,165,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,215,198,0,0,0,0,0,206,222,42,43,79,
+0,79,26,27,165,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,215,198,0,0,0,174,0,206,222,42,43,79,
 0,79,42,43,101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,216,222,0,214,198,0,0,0,221,222,0,58,59,79,
 0,79,58,59,197,198,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,206,215,216,216,222,13,0,10,11,214,215,215,216,222,32,0,12,79,79,
 0,79,44,0,0,214,198,0,0,0,0,0,0,0,0,0,0,206,215,216,215,222,42,43,0,12,0,0,26,27,0,44,0,0,10,11,0,28,29,32,

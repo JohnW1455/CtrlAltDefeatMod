@@ -21,7 +21,14 @@
             "Action": "EditData",
             "Target": "Data/Events/Forest",
             "Entries": {
-              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/SawEvent CAD.TCC_Town_event1a ": "Cyclops/91 56/Rodger 103 74 1 Kacy 88 57 2/ skippable/ pause 100/move Kacy 3 0 2/move Kacy 0 7 1/warp Kacy 91 74/viewport move 0 5 3000/pause 3000/viewport move 3 0 3000/move Kacy 9 0 1/move Rodger 0 0 3/jump Rodger/emote Rodger 16/speak Kacy \"Rodger! I can't believe we failed again! Didn't we do everything right?\"$a/speak Rodger \"Goodness Kacy... you scared me!\"$a/speak Rodger \"But we've obviously made some miscalculations. We're getting close, but It'll probably be some time before we can successfully execute this.\"/speak Kacy \"Ugh! I'm sick and tired of waiting!\"$a/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"$h/speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Kacy 1 0 0/move Kacy 0 -2 0/warp Kacy 1 1/move Rodger -2 0 0/move Rodger 0 -2 0/warp Rodger 1 1/pause 500/end"
+              "CAD.TCC_Forest_surpriseEvent/GameStateQuery WEATHER Town Sun/SawEvent CAD.TCC_Town_event1a ": "Cyclops/119 95/Rodger 117 93 1 Kacy 107 86 2/ 
+              skippable/ pause 100/move Kacy 0 6 1/move Kacy 3 0 1/ move Kacy 0 1 1 / move Kacy 5 0 1/ speak Kacy \"HEY RODGER!\"$1/
+              faceDirection Rodger 3 true/ jump Rodger/ emote Rodger 16/speak Rodger \"Dont' scare me like that. I'm literally on the edge of a cliff.\"$1/
+              emote Kacy 12/ speak Kacy \"Sorry Rodger...$3#$b#I'm just mad that our ritual didn't work again!\"$0/
+              speak Rodger \"We've obviously made some miscalculations.#$b#We're getting close, but It'll probably be some time before we can successfully execute this.\"/
+              speak Kacy \"Ugh! I'm sick and tired of waiting!\"$2/speak Rodger \"Calm down, it'll be okay. Let's get you some tea.\"/ 
+              speak Kacy \"That sounds perfect sweetie!\"$l/emote Kacy 20/move Rodger 0 -2 0/ warp Rodger 1 1/ 
+              move Kacy 2 0 1/ move Kacy 0 -2 0/ warp Kacy 1 1/ pause 500/ end"
             }
         },
         {
@@ -36,28 +43,66 @@
                 faceDirection Rodger 2/speak Rodger \"Hold on... I've heard ${he's^she's^they're}$ pretty handy. We can put ${him^her^them}$ to use.\"/
                 faceDirection Rodger 1/speak Kacy \"I like the way you're thinking. Hey @! Oogidie boogidie boogle boo!\"$h/screenFlash 2/startJittering/action AddBuff Unlucky/
                 speak Kacy \"I've just cursed you farmer${boy^girl^them}$! If you EVER want to be free from it you better do what we say.\"$h/
-                speak Rodger \"You can start by getting us an emerald.\"/speak Kacy \"Make sure it's nice and shiny, too!\"/
+                speak Rodger \"You can start by getting us some jade.\"/speak Kacy \"Make sure they're nice and shiny, too!\"/
                 speak Rodger \"Bring it to me when you've collected it.\"/stopJittering/move Kacy 0 -2 0/speak Kacy \"Now get out!\"$a/pause 500/addQuest 37362/end warpOut",
                 "CAD.TCC_CultCave_Act2TransitionEvent/SawEvent CAD.TCC_CultCave_curseEvent/GameStateQuery PLAYER_HAS_ITEM Current 706 3/gameStateQuery {{HasActiveQuest |contains=37365}}": "Cyclops/
                 44 32/Rodger 38 32 2 Kacy 47 31 3 farmer 44 31 1/ action RemoveItem 706 3/ action RemoveQuest 37365/ pause 1000/ 
-                speak Kacy \"Excellent work my minion! You have proven yourself worthy to join our cause.#$b#However, to achieve our goals, we are going to need more members.\"/
+                speak Kacy \"Excellent work my minion! You have proven yourself worthy to join our cause.$2#$b#However, to achieve our goals, we are going to need more members.\"/
                 faceDirection farmer 3 true/ advancedMove Rodger false 0 -1 4 0/ 
                 speak Rodger \"I've been watching people around town and we have decided that Emily will be our next target.#$b#I've heard she’s quite the seamstress, so a gift of cloth should persuade her.\"/
-                faceDirection farmer 1 true/ move Kacy -1 0 3/ speak Kacy \"Now go forth! Seek out Emily and convince her to join us!\"/ addQuest 37366/ end warpOut",
+                faceDirection farmer 1 true/ move Kacy -1 0 3/ speak Kacy \"Now go forth! Seek out Emily and convince her to join us!\"$2/ addQuest 37366/ end warpOut",
                 "CAD.TCC_CultCave_IntroduceEmily/SawEvent CAD.TCC_HaleyHouse_CompleteEmilyQuest": "Cyclops/44 31/
-                Rodger 42 32 1 Kacy 42 31 1 Emily 44 28 2 farmer 44 29 2/ action RemoveQuest 37368/move farmer 0 3 3/ move Emily 0 3 3/ speak Kacy \"Ah, I see our newest member has arrived!\"/ 
+                Rodger 42 32 1 Kacy 42 31 1 Emily 44 28 2 farmer 44 29 2/ action RemoveQuest 37368/move farmer 0 3 3 true/ move Emily 0 3 3 true/ pause 750/ 
+                speak Kacy \"Ah, I see our newest member has arrived!\"/ 
                 speak Rodger \"Welcome. We're glad you're here.\"/speak Emily \"I'm glad to be here, this place looks so cool!\"/
-                speak Kacy \"Right?! I decorated it myself!\"/emote Kacy 20/speak Rodger \"Good job @. Now who should we recruit next?\"/ faceDirection Kacy 2/
-                faceDirection Rodger 0/ speak Kacy \"What about Clint? He seems lonely and vulnerable.\"/speak Rodger \"Having a blacksmith among us does sound useful.\"/
-                speak Kacy \"What do you think would get him to join us?\"/ faceDirection Kacy 1/ faceDirection Rodger 1/
+                speak Kacy \"Right?! I decorated it myself!\"/emote Kacy 20/speak Rodger \"Good job @. Now who should we recruit next?\"/ faceDirection Kacy 2 true/
+                faceDirection Rodger 0/ speak Kacy \"What about Clint? He seems lonely and vulnerable.\"$2/speak Rodger \"Having a blacksmith among us does sound useful.\"/
+                faceDirection Kacy 1 true/ faceDirection Rodger 1/ speak Kacy \"What do you think would get him to join us?\"/ 
                 speak Emily \"Clint is can get really into his work.#$b#If you get him something blacksmith related he'd be willing to join.\"/
                 speak Kacy \"Alright @, go find Clint and convince him to join us!\"/ addQuest 37369/ end warpOut",
                 "CAD.TCC_CultCave_IntroduceClint/SawEvent CAD.TCC_Blacksmith_CompleteClintQuest": "Cyclops/44 31/
-                Clint 44 28 2 Emily 44 32 0 Kacy 43 32 0 Rodger 42 30 1 farmer 44 29 2/ action RemoveQuest 37371/ move farmer 0 1 2 / move farmer 1 0 2 / move Clint 0 2 2 true/ 
+                Clint 44 28 2 Emily 44 32 0 Kacy 43 32 0 Rodger 42 30 1 farmer 44 29 2/ action RemoveQuest 37371/ move farmer 0 1 2/move Clint 0 2 2 farmer 1 0 2 true/
                 speak Kacy \"Our newest and favoritest member has arrived!\"/speak Clint \"Hi everybody.\"/ speak Emily \"Hi Clint!\"/ speak Clint \"Oh, hi Emily!\"$1/ faceDirection Clint 1/
-                speak Clint \"Psst... @...$4#$b#Why didn't you tell me Emily was going to be here?\"$4/ faceDirection Clint 2 true/ speak Kacy \"Now we will discuss who will be the next person we welcome into the fold\"/
+                speak Clint \"Psst... @...$4\"/ faceDirection farmer 3/ speak Clint \"Why didn't you tell me Emily was going to be here?\"$4/ emote farmer 40/ faceDirection Clint 2 true/faceDirection farmer 2 true/ 
+                speak Kacy \"Now we will discuss who will be the next person we welcome into the fold.\"/
                 emote Clint 16/ speak Clint \"How about that jock, Alex?\"/ speak Rodger \"Yes, Alex. That could work.\"/ speak Emily \"He's pretty athletic, so you could probably convince him with something sporty.\"/
-                speak Kacy \"Alright farmer${boy^girl^them}$, you heard the lady. Get that man something sporty!\"/ addQuest 37372/ end warpOut"
+                speak Kacy \"Alright farmer${boy^girl^them}$, you heard the lady. Get that man something sporty!\"/ addQuest 37372/ end warpOut",
+                "CAD.TCC_CultCave_IntroduceAlex/SawEvent CAD.TCC_JoshHouse_CompleteAlexQuest": "Cyclops/44 31/ Alex 44 28  2 farmer 44 29 2 Kacy 41 30 1 Rodger 41 31 1 Emily 38 31 0/
+                move farmer 0 2 3 Alex 0 2 3/ action removeQuest 37374/speak Rodger \"Greetings Alex and @. I see things went well.\"/ speak Kacy \"Welcome to the club, Alex!\"$1/
+                faceDirection Alex 0/ pause 500/ faceDirection Alex 1/ pause 500/ faceDirection Alex 3/ speak Alex \"Thanks. This place is... uh... nice.#$b#Where are your weights?\"$2/
+                speak Kacy \"Nevermind that. Let's get down to business!$2\"/speak Rodger \"Any ideas on who to recruit next?\"/ faceDirection Emily 1 true/ faceDirection Kacy 3 true/ faceDirection Rodger 3/
+                speak Emily \"I think Abigail might be a good choice! Her and I talk about occult stuff sometimes.\"/ speak Alex \"She also collects a lot of strange things. No idea why though.\"/
+                faceDirection Kacy 1 true/ faceDirection Rodger 1/speak Rodger \"@, talk to Abigail and see what kind of strange knickknack you can persuade her with.\"/ speak Kacy \"Get moving, @!\"/ addQuest 37375 /end warpOut",
+                "CAD.TCC_CultCave_IntroduceAbigail/SawEvent CAD.TCC_SeedShop_CompleteAbigailQuest": "Cyclops/ 44 31/
+                farmer 44 29 2 Abigail 44 28 2 Kacy 41 31 1 Rodger 42 30 1 Emily 41 32 0 Alex 40 34 3/ action removeQuest 37377/ move farmer 0 2 2 Abigail 0 2 2/ 
+                move farmer 1 0 3 Abigail 0 2 2/ faceDirection Emily 1/ faceDirection Abigail 1/ pause 500/ faceDirection Abigail 2/ pause 500/ faceDirection Abigail 3/ 
+                speak Abigail \"Woah Emily, you were not lying. This place is pretty cool.\"/ faceDirection Kacy 2 true/ faceDirection Emily 0 true/ faceDirection Rodger 2 true/
+                speak Kacy \"YOU TOLD HER?!?!\"$2/
+                speak Emily \"Eheh... sorry.#$b#Are you kicking me out?\"$2/ speak Kacy \"No, but remember! Loose lips lose lives!\"$2/ faceDirection Kacy 1 true/
+                speak Rodger \"According to my calculations, all we need is one more member. Any ideas?\"/faceDirection Emily 2 true/ faceDirection Alex 0 true/ faceDirection Kacy 2 true/
+                speak Alex \"How about Leah? She spends a lot of time alone.\"/
+                speak Kacy \"That's a great idea!\"/ faceDirection Emily 1 true/ faceDirection Alex 1 true/ faceDirection Kacy 1 true/ faceDirection Rodger 1 true/ 
+                speak Abigail \"She's super into nature, probably anything outdoorsy will convince her.\"
+                speak Emily \"Maybe she'd like another plant or something?\"/ speak Rodger \"You know what to do, @.\"/ end warpOut",
+                "CAD.TCC_CultCave_IntroduceLeah/ SawEvent CAD.TCC_LeahHouse_CompleteLeahQuest": "Cyclops/ 38 33/
+                Kacy 39 32 2 Rodger 37 32 2 Emily 37 35 0 Abigail 39 35 0 Alex 36 33 1 Leah 1 1 2 Clint 36 34 1 farmer 1 1 2/ 
+                removeTile 36 33 Buildings/ removeTile 36 32 Front/ removeTile 40 33 Buildings/ removeTile 40 32 Front/ pause 1000/
+                speak Kacy \"We've really got a lot of members now!\"$1/ speak Rodger \"I know, it's very exciting. @ is doing excellent work.\"/
+                warp farmer 44 28/ move farmer 0 1 2 /warp Leah 44 28/ move farmer 0 5 2 Leah 0 5 2/ move farmer -4 0 3 Leah -4 0 3/
+                speak Kacy \"Speak of the devil!#$b#Welcome back @, and hello Leah!\"/
+                speak Leah \"Hi! I heard we're getting together to protect nature?\"/ speak Abigail \"Something like that.\"/
+                speak Emily \"What she means to say is exactly like that!\"/
+                speak Alex \"Are we recruiting anyone else?\"/ speak Kacy \"Actually I think our little club is full!\"/
+                speak Rodger \"Yes, great work everyone.#$b#This meeting is adjourned, but we'll meet back here soon.\"/ 
+                move Alex 0 -1 0/ move Alex 0 -1 1 Clint 0 1 1/ move Clint 4 0 1 Alex 4 0 1 Emily 4 0 1 Abigail 4 0 1 Leah 4 0 0/
+                move Clint 1 0 1 Alex 1 0 1 Emily 1 0 1 Abigail 1 0 0 Leah 0 -1 0/ move Clint 2 0 1 Alex 2 0 1 Emily 2 0 1 Abigail 0 -2 0 Leah 0 -2 0/
+                move Clint 1 0 1 Alex 1 0 1 Emily 0 -1 1 Abigail 0 -1 0 Leah 0 -1 0/ move Clint 0 -1 0 Alex 0 -1 0 Emily 0 -1 0 Abigail 0 -1 0 Leah 0 -1 0/ warp Leah 1 1/
+                move Clint 0 -2 0 Alex 0 -2 0 Emily 0 -2 0 Abigail 0 -2 0/ warp Alex 1 1/ move Clint 0 -1 0 Emily 0 -1 0 Abigail 0 -1 0/ warp Abigail 1 1/
+                move Clint 0 -2 0 Emily 0 -2 0 farmer 2 0 1/warp Emily 1 1/ move Clint 0 -1 0 farmer 1 0 1/ warp Clint 1 1/
+                speak Kacy \"@, wait!\"/ faceDirection farmer 3/ pause 500/ move farmer -2 0 3/ speak Rodger \"We wanted to thank you for all the work you’ve done for us.\"/
+                speak Kacy \"Seriously, you’ve really helped us flourish!\"/ speak Rodger \"We trust you enough to tell you our true intentions.\"/
+                speak Kacy \"We’re gonna flood the world with a magic ritual! And you better help us if you ever want that curse lifted.\"$2/ emote farmer 40/
+                speak Rodger \"We’ll meet with you soon to discuss the details.\"/ speak Kacy \"Goodbye for now!\"$1/end warpOut"
             }
         },
         {
@@ -98,10 +143,48 @@
             "Action": "EditData",
             "Target": "Data/Events/JoshHouse",
             "Entries": {
-                "CAD.TCC_JoshHouse_AlexRecruitBegin/SawEvent CAD.TCC_CultCave_IntroduceClint": "none/ 6 19/
-                Alex 3 17 0 farmer 9 23 0/ action RemoveQuest 37372/ pause 500/ move farmer 0 -4 0/ move farmer -4 0 0/ faceDirection Alex 1/ jump Alex/ emote Alex 16/
-                speak Alex \"Hey, what's up @?#$b#What brings you to mi casa?\"/ emote farmer 8/ pause 500/ "
+                "CAD.TCC_JoshHouse_AlexRecruitBegin/ SawEvent CAD.TCC_CultCave_IntroduceClint": "none/ 6 19/
+                Alex 3 17 0 farmer 9 23 0/ action RemoveQuest 37372/ pause 500/ move farmer 0 -4 0/ move farmer -6 0 0/ faceDirection Alex 2/ jump Alex/ emote Alex 16/
+                speak Alex \"Hey, what's up @?#$b#What brings you to mi casa?\"$1/ emote farmer 8/ pause 500/ speak Alex \"The new dudes offered to spot my lifts? That's pretty sick, bro.\"/
+                speak Alex \"Can you help me with something first?#$b# I'm trying to bulk up but I don't know what I should eat.$2#$b#Can you get me a quick snack that's got a lot of protein?\"/
+                emote farmer 40/ speak Alex \"Thanks, bro. Bring it back here when you've got it.\"$1/ addQuest 37373/ end warpOut/",
+                "CAD.TCC_JoshHouse_CompleteAlexQuest/ SawEvent CAD.TCC_JoshHouse_AlexRecruitBegin/ GameStateQuery PLAYER_HAS_ITEM Current 403 10": "none/ 6 19/
+                Alex 5 17 0 farmer 9 23 0/ action RemoveQuest 37373/ action RemoveItem 403 10/ pause 500/ move farmer 0 -4 0/ move farmer -4 0 0/ 
+                faceDirection Alex 2 true/ jump Alex/ emote Alex 16/ speak Alex \"You got me field snacks? I love those!\"$1/ move Alex 0 1 2/ 
+                speak Alex \"Thanks bro!$1#$b#I'll head over to Kacy and Rodger's place next time you go there.\"/
+                addQuest 37374/ end warpOut"
             }
-        }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "CAD.TCC_SeedShop_AbigailRecruitBegin/ SawEvent CAD.TCC_CultCave_IntroduceAlex": "none/ 9 24/
+                Abigail 10 23 0 farmer 6 28 0/ action RemoveQuest 37375/ pause 500/ move farmer 0 -5 1/ move farmer 1 0 1/ pause 250/ faceDirection Abigail 3/
+                emote Abigail 16/ speak Abigail \"Hi @. What'cha up to?\"/ emote farmer 8/ speak Abigail \"Oh! I heard about Kacy and Rodger from Emily. She says they're pretty cool.\"/
+                speak Abigail \"I think I was going to join them anyway, but while you're here you can help me with something.\"/ faceDirection Abigail 1/ pause 250/ faceDirection Abigail 3/
+                speak Abigail \"Do you think you can get me a pufferfish? I need it for... something.\"/ emote farmer 40/ 
+                speak Abigail \"Once you get it, bring it right back here ok?\"/ addQuest 37376/ end warpOut",
+                "CAD.TCC_SeedShop_CompleteAbigailQuest/ SawEvent CAD.TCC_SeedShop_AbigailRecruitBegin/ GameStateQuery PLAYER_HAS_ITEM Current 128 1": "none/ 9 24/
+                Abigail 4 23 0 farmer 6 28 0/ action RemoveQuest 37376/ action RemoveItem 128 1/ pause 500/ move farmer 0 -5 1/ move farmer -1 0 3/ faceDirection Abigail 1/
+                speak Abigail \"You got the go... I mean, pufferfish?\"/ emote farmer 40 / speak Abigail \"Thanks, but please keep this a secret.\"/ emote farmer 16/
+                speak Abigail \"When you go to Kacy and Rodger's place, I'll follow you there.\"/ addQuest 37377/ end warpOut"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/LeahHouse",
+            "Entries": {
+                "CAD.TCC_LeahHouse_LeahRecruitBegin/ SawEvent CAD.TCC_CultCave_IntroduceAbigail": "none/ 9 8/
+                Leah 3 7 3 farmer 7 9 0/ pause 500/ action removeQuest 37378/ move farmer 0 -2 3/ move farmer -2 0 3/ faceDirection Leah 1/
+                speak Leah \"Hello @. Do you need something?\"/ emote farmer 8/ speak Leah \"The new people want me to join their nature club? That sounds like fun.\"/
+                speak Leah \"Do you think you could do something for me first?#$b#I'm out of maple syrup. I would be very greatful if you could get me some.\"/
+                addQuest 37379/ end warpOut",
+                "CAD.TCC_LeahHouse_CompleteLeahQuest/ SawEvent CAD.TCC_LeahHouse_LeahRecruitBegin/ GameStateQuery PLAYER_HAS_ITEM Current 724 1": "none/9 8/
+                Leah 3 7 3 farmer 7 9 0/ pause 500/ action removeQuest 37379/ action removeItem 724 1/move farmer 0 -2 3/ move farmer -2 0 3/ faceDirection Leah 1/
+                speak Leah \"Hello again @.#$b#Oh, and you have the maple syrup I asked for. Thank you!\"/ emote Leah 20/
+                speak Leah \"Ask me next time you go to Kacy and Rodger's place to join you.\"/ addQuest 37380/ end warpOut"
+            }
+        }   
     ]
 }

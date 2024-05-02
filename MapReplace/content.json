@@ -3,23 +3,23 @@
   "CustomLocations": [
     {
       "Name": "Custom_Cult_Cave",
-      "FromMapFile": "assets/CultCave.tmx"
-    }, 
+      "FromMapFile": "assets/Maps/CultCave.tmx"
+    },
     {
       "Name":"Custom_Cave_Level1",
-      "FromMapFile": "assets/CaveLevel1.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel1.tmx"
     },
     {
       "Name":"Custom_Cave_Level2",
-      "FromMapFile": "assets/CaveLevel2.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel2.tmx"
     },
     {
       "Name":"Custom_Cave_Level3",
-      "FromMapFile": "assets/CaveLevel3.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel3.tmx"
     },
     {
       "Name":"Custom_Ritual_Room",
-      "FromMapFile": "assets/RitualRoom.tmx"
+      "FromMapFile": "assets/Maps/RitualRoom.tmx"
     }
   ],
   "Changes": [
@@ -32,7 +32,7 @@
     {
       "Action": "Load",
       "Target": "Maps/Custom_Cult_Cave",
-      "FromFile": "assets/CultCave.tmx"
+      "FromFile": "assets/Maps/CultCave.tmx"
     },
     {
       "Action": "Load",
@@ -114,7 +114,7 @@
     {
       "Action": "EditMap",
       "Target": "Maps/Forest",
-      "FromFile": "assets/Forest2.tmx"
+      "FromFile": "assets/Maps/Forest2.tmx"
     },
     {
       "Action": "EditMap",
@@ -393,13 +393,13 @@
     {
       "Action": "Load",
       "Target": "Tilesheets/weapons",
-      "FromFile": "assets/weapons.png"
+      "FromFile": "assets/Maps/Tilesets/weapons.png"
     },
     {
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some emeralds for their plans../Bring Kacy 3 emeralds./Kacy 60 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish.",
+        "37362": "ItemDelivery/Bejeweled/Kacy & Rodger need some Jades for their plans../Bring Kacy 3 Jades./Kacy 70 3/37363/25/-1/true/Wow, these are gorgeous! Great job! Now go get me a catfish.",
         "37363": "ItemDelivery/MTV's..?!/Kacy & Rodger need a catfish for some reason./Bring Kacy 1 catfish./Kacy 143 1/37364/25/-1/true/Wonderful! We're also going to need some hardwood, so go get that ASAP please!",
         "37364": "ItemDelivery/Innuendo/Kacy & Rodger need some hardwood for their schemes./Bring Kacy 5 hardwood./Kacy 709 5/37365/25/-1/true/Excellent! It does seem like we'll need some more fish scales though. Could you pick up some Shad for us?",
         "37365": "ItemDelivery/Shad Fu/Kacy and Rodger need some shad for their scales./Bring Kacy 3 shads./Kacy 706 3/-1/25/-1/true/Awesome! We should be good for now...",
@@ -410,7 +410,14 @@
         "37370": "Basic/Iron Things Out Part 2/Offer Clint 1 Iron Bar and he'll be sure to join Kacy and Rodger/Bring 1 Iron Bar back to Clint's house./null/-1/0/-1/false",
         "37371": "Basic/Iron Things Out Part 3/Go back to Kacy and Rodger's cave to introduce Clint and officially induct him./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
         "37372": "Basic/Field Work Part 1/Go to Alex's house and find out what kind of sporty thingamajig will get him to join./Go to Alex's house./null/-1/0/-1/false",
-        "37373": "Basic/Field Work Part 2/"
+        "37373": "Basic/Field Work Part 2/Alex wants a snack full of protein. You think some Field Snacks will do the trick./Bring 10 Field Snacks back to Alex's house./null/-1/0/-1/false",
+        "37374": "Basic/Field Work Part 3/You've convinced Alex to join up with Kacy and Rodger. Go back to their cave to introduce him./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37375": "Basic/Shiny Collector Part 1/Go to Abigail's house and talk to her to find out what could convince her to join the cult./Go to Abigail's house./null/-1/0/-1/false",
+        "37376": "Basic/Shiny Collector Part 2/Abigail needs a pufferfish, for whatever reason. Go find one and bring it back to Abigail's house./Bring 1 Pufferfish to Abigail's house./null/-1/0/-1/false",
+        "37377": "Basic/Shiny Collector Part 3/You've convinced Abigail to join. Go back to Kacy and Rodger's cave to introduce her./Return to Kacy and Rodger's cave./null/-1/0/-1/false",
+        "37378": "Basic/Sticky Situation Part 1/Leah is the last member Kacy and Rodger want you to recruit, go to Leah's house and convince her./Go to Leah's house./null/-1/0/-1/false",
+        "37379": "Basic/Sticky Situation Part 2/Leah would like you get get some Maple Syrup for her. Be gentle with the trees, though!/Bring 1 Maple Syrup back to Leah's house./null/-1/0/-1/false",
+        "37380": "Basic/Sticky Situation Part 3/With your job done, you can head back to Kacy and Rodger's cave to introduce Leah/Return to Kacy and Rodger's cave./null/-1/0/-1/false"
       }
     }
   ]
