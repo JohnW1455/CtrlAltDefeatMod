@@ -4,6 +4,22 @@
     {
       "Name": "Custom_Cult_Cave",
       "FromMapFile": "assets/Maps/CultCave.tmx"
+    },
+    {
+      "Name":"Custom_Cave_Level1",
+      "FromMapFile": "assets/Maps/CaveLevel1.tmx"
+    },
+    {
+      "Name":"Custom_Cave_Level2",
+      "FromMapFile": "assets/Maps/CaveLevel2.tmx"
+    },
+    {
+      "Name":"Custom_Cave_Level3",
+      "FromMapFile": "assets/Maps/CaveLevel3.tmx"
+    },
+    {
+      "Name":"Custom_Ritual_Room",
+      "FromMapFile": "assets/Maps/RitualRoom.tmx"
     }
   ],
   "Changes": [
