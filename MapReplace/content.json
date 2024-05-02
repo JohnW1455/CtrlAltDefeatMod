@@ -7,19 +7,19 @@
     },
     {
       "Name":"Custom_Cave_Level1",
-      "FromMapFile": "assets/CaveLevel1.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel1.tmx"
     },
     {
       "Name":"Custom_Cave_Level2",
-      "FromMapFile": "assets/CaveLevel2.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel2.tmx"
     },
     {
       "Name":"Custom_Cave_Level3",
-      "FromMapFile": "assets/CaveLevel3.tmx"
+      "FromMapFile": "assets/Maps/CaveLevel3.tmx"
     },
     {
       "Name":"Custom_Ritual_Room",
-      "FromMapFile": "assets/RitualRoom.tmx"
+      "FromMapFile": "assets/Maps/RitualRoom.tmx"
     }
   ],
   "Changes": [
