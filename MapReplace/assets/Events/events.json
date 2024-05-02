@@ -198,7 +198,7 @@
           "Action": "EditData",
           "Target": "Data/Events/Custom_Cult_Cave",
           "Entries": {
-            "CAD.TCC_CultCave_postClearEvent/": "Cyclops/44 33/Rodger 41 29 3 Kacy 48 32 2 farmer 44 28 2/pause 500/move Kacy 0 0 0/move Rodger 0 0 1/speak Kacy \"Hiya @! Stellar job on those cave creeps!$s\"/speak Rodger \"We should be ready to perform the ritual soon.\"/speak Kacy \"We just gotta get it ready first!#$b$Thanks again for all of your help, @.$h\"/speak Rodger \"Yes, thank you @. You've been an invaluable asset.#$b#Kacy and I talked and we believe you should have the honor of enacting the ritual.$u\"/speak Kacy \"We'll get it to you tomorrow!$s\"/mail Kacy/speak Kacy \"Come on back when it's all charged up!$h\"/end"
+            "CAD.TCC_CultCave_postClearEvent/": "Cyclops/44 33/Rodger 41 29 3 Kacy 48 32 2 farmer 44 28 2/pause 500/move Kacy 0 0 0/move Rodger 0 0 1/speak Kacy \"Hiya @! Stellar job on those cave creeps!$s\"/speak Rodger \"We should be ready to perform the ritual soon.\"/speak Kacy \"We just gotta get it ready first!#$b$Thanks again for all of your help, @.$h\"/speak Rodger \"Yes, thank you @. You've been an invaluable asset.#$b#Kacy and I talked and we believe you should have the honor of enacting the ritual.$u\"/speak Kacy \"Kill some stuff with it in order to charge it up!$s\"/addItem (W)65/speak Kacy \"Come on back when it's all juiced up!$h\"/end"
           }
         },
         {
