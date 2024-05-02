@@ -40,6 +40,11 @@
       "FromFile": "assets/Events/BlankEvent.json"
     },
     {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_Ritual_Room",
+      "FromFile": "assets/Events/BlankEvent.json"
+    },
+    {
       "Action": "Include",
       "FromFile": "assets/Events/events.json"
     },
@@ -383,7 +388,7 @@
         "CAD.TCC_RecurseDaily": {
           "Id": "CAD.TCC_RecurseDaily",
           "Trigger": "DayStarted",
-          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current CAD.TCC_CultCave_curseEvent, !PLAYER_HAS_SEEN_EVENT Current CAD.TCC_Forest_postRitualEvent",
           "Actions": [
             "AddBuff Unlucky"
           ]
@@ -418,6 +423,13 @@
         "37378": "Basic/Sticky Situation Part 1/Leah is the last member Kacy and Rodger want you to recruit, go to Leah's house and convince her./Go to Leah's house./null/-1/0/-1/false",
         "37379": "Basic/Sticky Situation Part 2/Leah would like you get get some Maple Syrup for her. Be gentle with the trees, though!/Bring 1 Maple Syrup back to Leah's house./null/-1/0/-1/false",
         "37380": "Basic/Sticky Situation Part 3/With your job done, you can head back to Kacy and Rodger's cave to introduce Leah/Return to Kacy and Rodger's cave./null/-1/0/-1/false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Rodger": "Hello @.^It seems like the dagger has enough charge to cause some rain, at least. Feel free to keep it and visit when you want to activate it. ^   -Rodger ^P.S. Kacy says hi."
       }
     }
   ]
