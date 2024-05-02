@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "OrUAmq8G0bcGp3t+nsqAU64K4EUJWFrMqIs7gZY+b3raTFCbken9o7t986WtGOSlKAyKK8ch2se97oyjSeFcrg==",
+  "dgSpecHash": "PU0ZVhcD2TslkzPsMHvI5HYq0SSnZWnfVZ9f8PYWx7TotEHehdgXVj0hEf7xEQK62xi2PtoAuqPGDyVR2gEV6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shawg\\OneDrive\\Desktop\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
+  "projectFilePath": "C:\\Users\\jhwag\\Documents\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\shawg\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.1.1\\pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512"
+    "C:\\Users\\jhwag\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.1.1\\pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512",
+    "C:\\Users\\jhwag\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\jhwag\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\jhwag\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
