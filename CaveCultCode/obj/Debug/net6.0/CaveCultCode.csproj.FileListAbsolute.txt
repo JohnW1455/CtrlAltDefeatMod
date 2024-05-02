@@ -15,3 +15,11 @@ E:\SteamLibrary\steamapps\common\Stardew Valley\Mods\CaveCultCode\obj\Debug\net6
 E:\SteamLibrary\steamapps\common\Stardew Valley\Mods\CaveCultCode\obj\Debug\net6.0\CaveCultCode.AssemblyInfo.cs
 E:\SteamLibrary\steamapps\common\Stardew Valley\Mods\CaveCultCode\obj\Debug\net6.0\CaveCultCode.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\Stardew Valley\Mods\CaveCultCode\obj\Debug\net6.0\CaveCultCode.dll
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\bin\Debug\net6.0\CaveCultCode.deps.json
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\bin\Debug\net6.0\CaveCultCode.dll
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.csproj.AssemblyReference.cache
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.AssemblyInfoInputs.cache
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.AssemblyInfo.cs
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.csproj.CoreCompileInputs.cache
+E:\Projects\CtrlAltDefeatMod\CaveCultCode\obj\Debug\net6.0\CaveCultCode.dll
