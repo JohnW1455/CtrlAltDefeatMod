@@ -55,22 +55,22 @@ namespace CaveCultCode
             if (!Context.IsWorldReady)
                 return;
 
-            if (e.Button == SButton.V)
-            {
-                SpawnWeapon();
-            }
-            if (e.Button == SButton.B)
-            {
-                this.Monitor.Log($"{Game1.player.CurrentTool.DisplayName} has {numberOfKills}", LogLevel.Debug);
-            }
-            if (e.Button == SButton.N)
-            {
-                numberOfKills = 10;
-            }
-            if (e.Button == SButton.P)
-            {
-                activateAltar(10);
-            }
+            //if (e.Button == SButton.V)
+            //{
+            //    SpawnWeapon();
+            //}
+            //if (e.Button == SButton.B)
+            //{
+            //    this.Monitor.Log($"{Game1.player.CurrentTool.DisplayName} has {numberOfKills}", LogLevel.Debug);
+            //}
+            //if (e.Button == SButton.N)
+            //{
+            //    numberOfKills = 10;
+            //}
+            //if (e.Button == SButton.P)
+            //{
+            //    activateAltar(10);
+            //}
             if (e.Button == SButton.MouseLeft)
             {
                 if (Game1.player.CurrentTool.DisplayName == "Ritual Dagger")
@@ -83,7 +83,7 @@ namespace CaveCultCode
             }
 
             // print button presses to the console window
-            this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
+            //this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
         }
 
         private void OnUpdateTicked(object? sender, EventArgs e)
@@ -110,6 +110,24 @@ namespace CaveCultCode
                 {
                     if (Game1.player.CurrentTool.DisplayName == "Ritual Dagger")
                     {
+                        switch (numberOfKills)
+                        {
+                            case 0:
+                                Game1.addHUDMessage(new HUDMessage("The monster's energy seems to be absorbed into the dagger", 2));
+                                break;
+                            case 4:
+                                Game1.addHUDMessage(new HUDMessage("The dagger's energy seems to be growing", 2));
+                                break;
+                            case 9:
+                                Game1.addHUDMessage(new HUDMessage("The dagger hums with mysterious energy", 2));
+                                break;
+                            case 14:
+                                Game1.addHUDMessage(new HUDMessage("The dagger has started glowing", 2));
+                                break;
+                            case 19:
+                                Game1.addHUDMessage(new HUDMessage("The dagger is overflowing with energy", 2));
+                                break;
+                        }
                         numberOfKills += numOfMonstersLastFrame - numOfMonsters;
                         this.Monitor.Log($"{numberOfKills} monsters killed. Total kills: {numberOfKills}", LogLevel.Debug);
                     }
