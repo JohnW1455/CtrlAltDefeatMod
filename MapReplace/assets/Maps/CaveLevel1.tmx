@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="2">
  <properties>
-  <property name="Warp" value="23 13 Forest 101 73"/>
+  <property name="Warp" value="23 13 Custom_Cult_Cave 33 41 31 30 Custom_Cave_Level2 9 9"/>
  </properties>
  <tileset firstgid="1" name="mine" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="mine.png" width="256" height="288"/>
+  <image source="Tilesets/mine.png" width="256" height="288"/>
  </tileset>
  <tileset firstgid="289" name="WizardHouseTiles" tilewidth="16" tileheight="16" tilecount="60" columns="4">
-  <image source="WizardHouseTiles.png" width="64" height="240"/>
+  <image source="Tilesets/WizardHouseTiles.png" width="64" height="240"/>
  </tileset>
  <tileset firstgid="349" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+  <image source="Tilesets/walls_and_floors.png" width="256" height="560"/>
  </tileset>
- <tileset firstgid="909" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+ <tileset firstgid="909" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="Tilesets/paths.png" width="64" height="256"/>
  </tileset>
  <layer id="1" name="Back" width="50" height="50">
   <data encoding="csv">
@@ -101,7 +101,7 @@
 0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,26,27,214,198,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,80,28,29,79,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,13,12,13,214,198,0,0,0,0,0,0,0,0,0,0,0,0,0,0,208,26,27,79,79,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,28,29,80,214,198,0,0,0,0,0,0,0,0,0,0,0,0,0,192,80,45,79,79,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,46,47,214,198,0,0,0,0,0,0,0,0,0,0,0,0,208,44,79,79,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,46,47,214,198,0,0,0,0,0,0,0,0,0,174,0,0,208,44,79,79,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,79,13,79,63,80,214,215,216,215,216,217,0,206,215,217,0,0,206,207,60,61,79,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,79,79,79,11,80,58,59,80,46,47,214,216,222,80,233,0,206,222,80,80,79,79,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,79,79,26,27,79,62,79,63,80,42,43,62,214,215,222,26,27,79,79,79,0,0,0,0,0,0,0,0,0,0,0,0,
