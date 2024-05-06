@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0GzbS1VLJm/piedeJu0ZKaBjM+ixsUdhw8mJgU2yWMdggrtznYFvL603Q3+wbBYFDywe8vjGUr9YMI4QMAQEUQ==",
+  "dgSpecHash": "OrUAmq8G0bcGp3t+nsqAU64K4EUJWFrMqIs7gZY+b3raTFCbken9o7t986WtGOSlKAyKK8ch2se97oyjSeFcrg==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
+  "projectFilePath": "C:\\Users\\shawg\\OneDrive\\Desktop\\CtrlAltDefeatMod\\CaveCultCode\\CaveCultCode.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nashf\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.1.1\\pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512"
+    "C:\\Users\\shawg\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.1.1\\pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512"
   ],
   "logs": []
 }
