@@ -1,0 +1,11 @@
+{
+    "Name": "CaveCultContentPatcher",
+    "Author": "John Wager",
+    "Version": "1.0.0",
+    "Description": "Content Patcher jsons for the Cave Cult mod by CtrlAltDefeat",
+    "UniqueID": "CtrlAltDefeat.TheCaveCultContentPatcher",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
